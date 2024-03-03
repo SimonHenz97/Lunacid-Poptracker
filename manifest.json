@@ -1,0 +1,12 @@
+﻿{
+    "name": "Lunacid Pack for PopTracker",
+    "game_name": "Lunacid",
+    "package_version": "0.0.0.2",
+    "package_uid": "1f1dbd3f-bf6c-45a4-9ff7-f841a0b0ebe2",
+    "author": "ScorpioGameKing",
+    "variants": {
+        "standard": {
+            "display_name": "Lunacid Map & Item Tracker"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "TEST",
+        "children": [
+            {
+                "name": "TEST",
+                "access_rules": [                    
+                    "vamp_white",
+                    "vamp_emerald"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Symbol Test",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Interconnections",
+                        "x": 1750,
+                        "y": 700
+                    }
+                ]
+            }           
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Vampiric Symbol",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item_vamp_w.png",
+                "codes": "vamp_white,vamp_symbol",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/item_vamp_a.png",
+                "codes": "vamp_azure,vamp_symbol",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/item_vamp_e.png",
+                "codes": "vamp_emerald,vamp_symbol",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Black Books",
+        "type": "progressive",
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item_black_book_0.png",
+                "codes": "bb_0,bb",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item_black_book_1.png",
+                "codes": "bb_1,bb",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item_black_book_2.png",
+                "codes": "bb_2,bb",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item_black_book_3.png",
+                "codes": "bb_3,bb",
+                "inherit_codes": true
+            }
+        ]
+    }
+]
