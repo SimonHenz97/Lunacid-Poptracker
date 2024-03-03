@@ -23,5 +23,30 @@
                 ]
             }           
         ]
+    },
+    {
+        "name": "Hollow Basin",
+        "children": [
+            {
+                "name": "Replica Sword",
+                "access_rules": [                    
+                    "vamp_white",
+                    "vamp_emerald"                    
+                ],
+                "sections": [
+                    {
+                        "name": "Replica Sword",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 640,
+                        "y": 835
+                    }
+                ]
+            }           
+        ]
     }
 ]
