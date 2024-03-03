@@ -1,38 +1,10 @@
 [
-    {
-        "name": "TEST",
-        "children": [
-            {
-                "name": "TEST",
-                "access_rules": [                    
-                    "vamp_white",
-                    "vamp_emerald"                    
-                ],
-                "sections": [
-                    {
-                        "name": "Symbol Test",
-                        "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "Interconnections",
-                        "x": 1750,
-                        "y": 700
-                    }
-                ]
-            }           
-        ]
-    },
+    
     {
         "name": "Hollow Basin",
         "children": [
             {
-                "name": "Replica Sword",
-                "access_rules": [                    
-                    "vamp_white",
-                    "vamp_emerald"                    
-                ],
+                "name": "Fallen Statue",
                 "sections": [
                     {
                         "name": "Replica Sword",
@@ -46,7 +18,87 @@
                         "y": 835
                     }
                 ]
-            }           
+            },
+            {
+                "name": "Near Enchanted Door",
+                "sections": [
+                    {
+                        "name": "Health Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 906,
+                        "y": 1347
+                    }
+                ]
+            },
+            {
+                "name": "Rightmost Water Room Bottom",
+                "sections": [
+                    {
+                        "name": "Mana Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 1550,
+                        "y": 1110
+                    }
+                ]
+            },
+            {
+                "name": "Rightmost Water Room Top",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Ghost Light)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 1550,
+                        "y": 875
+                    }
+                ]
+            },
+            {
+                "name": "Leftmost Water Room Bottom",
+                "sections": [
+                    {
+                        "name": "Health Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 1647,
+                        "y": 641
+                    }
+                ]
+            },
+            {
+                "name": "Chest Before Demi",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Flame Spear)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hollow Basin",
+                        "x": 808,
+                        "y": 333
+                    }
+                ]
+            }            
         ]
     }
 ]

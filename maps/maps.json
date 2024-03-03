@@ -13,7 +13,7 @@
     },
     {
         "name": "Hollow Basin",
-        "location_size": 64,
+        "location_size": 24,
         "location_border_thickness": 2,
         "img": "images/maps/map_hollow_basin.png"
     },
