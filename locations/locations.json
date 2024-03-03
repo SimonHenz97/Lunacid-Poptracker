@@ -100,5 +100,26 @@
                 ]
             }            
         ]
+    },
+    {
+        "name": "Wing's Rest",
+        "children": [
+            {
+                "name": "Bench",
+                "sections": [
+                    {
+                        "name": "Crystal Shard",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Wing's Rest",
+                        "x": 548,
+                        "y": 126
+                    }
+                ]
+            }
+        ]
     }
 ]
