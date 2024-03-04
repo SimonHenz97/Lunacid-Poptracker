@@ -28,13 +28,8 @@
         "initial_stage_idx": 0,
         "stages": [
             {
-                "img": "images/items/item_black_book_0.png",
-                "codes": "bb",
-                "inherit_codes": true
-            },
-            {
                 "img": "images/items/item_black_book_1.png",
-                "codes": "bb_1",
+                "codes": "bb_1, bb",
                 "inherit_codes": true
             },
             {
@@ -45,6 +40,24 @@
             {
                 "img": "images/items/item_black_book_3.png",
                 "codes": "bb_3",
+                "inherit_codes": true
+            }
+        ]
+    },
+    {
+        "name": "Enchanted Key",
+        "type": "progressive",
+        "allow_disabled": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/item_enchanted_key_1.png",
+                "codes": "ekey_1",
+                "inherit_codes": true
+            },
+            {
+                "img": "images/items/item_enchanted_key_2.png",
+                "codes": "ekey_2",
                 "inherit_codes": true
             }
         ]
