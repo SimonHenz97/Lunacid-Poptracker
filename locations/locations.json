@@ -119,6 +119,378 @@
                         "y": 126
                     }
                 ]
+            },
+            {
+                "name": "Clive Conversation",
+                "sections": [
+                    {
+                        "name": "Health Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Wing's Rest",
+                        "x": 420,
+                        "y": 858
+                    }
+                ]
+            },
+            {
+                "name": "Sheryl Shop",
+                "sections": [
+                    {
+                        "name": "Enchanted Key",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Crossbow",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Ocean Elixir",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Oil Lantern",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Rapier",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "Steel Needle",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Wing's Rest",
+                        "x": 864,
+                        "y": 976
+                    }
+                ]
+            },
+            {
+                "name": "Rafters",
+                "sections": [
+                    {
+                        "name": "Ocean Elixir",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Wing's Rest",
+                        "x": 728,
+                        "y": 1336
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Great Well Surface",
+        "children": [
+            {
+                "name": "Demi by the Gate",
+                "sections": [
+                    {
+                        "name": "Crystal Shard x 3",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Great Well Surface",
+                        "x": 386,
+                        "y": 256
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Laetus Chasm",
+        "children": [
+            {
+                "name": "Hidden Wall",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Ice Tear)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Laetus Chasm",
+                        "x": 1347,
+                        "y": 987
+                    }
+                ]
+            },
+            {
+                "name": "Invisible Path",
+                "sections": [
+                    {
+                        "name": "Blessed Wind",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Laetus Chasm",
+                        "x": 666,
+                        "y": 144
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Forbidden Archives",
+        "children": [
+            {
+                "name": "Back of Shelves",
+                "sections": [
+                    {
+                        "name": "Ocean Elixir",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1150,
+                        "y": 118
+                    }
+                ]
+            },
+            {
+                "name": "Strange Corpse",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Corpse Transformation)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1041,
+                        "y": 444
+                    }
+                ]
+            },
+            {
+                "name": "Plant Bed",
+                "sections": [
+                    {
+                        "name": "Health Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1750,
+                        "y": 1807
+                    }
+                ]
+            },
+            {
+                "name": "In the Corner",
+                "sections": [
+                    {
+                        "name": "Light Urn",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1769,
+                        "y": 1960
+                    }
+                ]
+            },
+            {
+                "name": "Pedestal Front",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Light Reveal)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1642,
+                        "y": 775
+                    }
+                ]
+            },
+            {
+                "name": "Pedestal Back",
+                "sections": [
+                    {
+                        "name": "Spell Ring (Blood Drain)",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1642,
+                        "y": 846
+                    }
+                ]
+            },
+            {
+                "name": "Hidden Room",
+                "sections": [
+                    {
+                        "name": "Wolfram Greatsword",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 2205,
+                        "y": 324
+                    }
+                ]
+            },
+            {
+                "name": "Dead End Right Side",
+                "sections": [
+                    {
+                        "name": "Mana Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1692,
+                        "y": 69
+                    }
+                ]
+            },
+            {
+                "name": "Bridge Roof",
+                "sections": [
+                    {
+                        "name": "Earth Elixir",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1401,
+                        "y": 478
+                    }
+                ]
+            },
+            {
+                "name": "In the Corner",
+                "sections": [
+                    {
+                        "name": "Health Vial",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1276,
+                        "y": 1290
+                    }
+                ]
+            },
+            {
+                "name": "UwU",
+                "sections": [
+                    {
+                        "name": "Axe of Harming",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1010,
+                        "y": 1783
+                    }
+                ]
+            },
+            {
+                "name": "Tree Base",
+                "sections": [
+                    {
+                        "name": "Fairy Moss",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1044,
+                        "y": 1813
+                    }
+                ]
+            },
+            {
+                "name": "Hidden Wall",
+                "sections": [
+                    {
+                        "name": "Crystal Shard",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1384,
+                        "y": 1793
+                    }
+                ]
+            },
+            {
+                "name": "Daedalus",
+                "sections": [
+                    {
+                        "name": "Black Book 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "bb_1"
+                        ]
+                    },
+                    {
+                        "name": "Black Book 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "bb_2"
+                        ]
+                    },
+                    {
+                        "name": "Black Book 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "bb_3"
+                        ]
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Forbidden Archives",
+                        "x": 1017,
+                        "y": 1170
+                    }
+                ]
             }
         ]
     }

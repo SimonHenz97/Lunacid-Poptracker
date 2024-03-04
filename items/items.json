@@ -29,22 +29,22 @@
         "stages": [
             {
                 "img": "images/items/item_black_book_0.png",
-                "codes": "bb_0,bb",
+                "codes": "bb",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item_black_book_1.png",
-                "codes": "bb_1,bb",
+                "codes": "bb_1",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item_black_book_2.png",
-                "codes": "bb_2,bb",
+                "codes": "bb_2",
                 "inherit_codes": true
             },
             {
                 "img": "images/items/item_black_book_3.png",
-                "codes": "bb_3,bb",
+                "codes": "bb_3",
                 "inherit_codes": true
             }
         ]
