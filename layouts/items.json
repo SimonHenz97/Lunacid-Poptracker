@@ -16,7 +16,16 @@
                         "rows": [
                             [
                                 "vamp_symbol",
-                                "bb"           
+                                "bb",
+                                "ekey"           
+                            ],
+                            [
+                                "wop",
+                                "ele_light",
+                                "ele_blood",
+                                "ele_fire",
+                                "ele_dark",
+                                "ele_poison"
                             ]
                         ]
                     }

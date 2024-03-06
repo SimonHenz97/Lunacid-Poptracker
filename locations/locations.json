@@ -4,23 +4,23 @@
         "name": "Hollow Basin",
         "children": [
             {
-                "name": "Fallen Statue",
+                "name": "HB: Starting Weapon",
                 "sections": [
-                    {
-                        "name": "Replica Sword",
-                        "item_count": 1
-                    }
+                   { 
+                      "name": "Replica Sword",
+                      "item_count": 1
+                   }
                 ],
                 "map_locations": [
-                    {
-                        "map": "Hollow Basin",
-                        "x": 640,
-                        "y": 835
-                    }
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 640,
+                      "y": 835
+                   }
                 ]
-            },
+             },
             {
-                "name": "Near Enchanted Door",
+                "name": "HB: Near Enchanted Door",
                 "sections": [
                     {
                         "name": "Health Vial",
@@ -36,7 +36,7 @@
                 ]
             },
             {
-                "name": "Rightmost Water Room Bottom",
+                "name": "HB: Rightmost Water Room (Right)",
                 "sections": [
                     {
                         "name": "Mana Vial",
@@ -52,7 +52,7 @@
                 ]
             },
             {
-                "name": "Rightmost Water Room Top",
+                "name": "HB: Rightmost Water Room (Left)",
                 "sections": [
                     {
                         "name": "Spell Ring (Ghost Light)",
@@ -68,7 +68,7 @@
                 ]
             },
             {
-                "name": "Leftmost Water Room Bottom",
+                "name": "HB: Leftmost Water Room",
                 "sections": [
                     {
                         "name": "Health Vial",
@@ -84,7 +84,7 @@
                 ]
             },
             {
-                "name": "Chest Before Demi",
+                "name": "HB: Chest Near Demi",
                 "sections": [
                     {
                         "name": "Spell Ring (Flame Spear)",
@@ -98,14 +98,286 @@
                         "y": 333
                     }
                 ]
-            }            
+            },
+            {
+                "name": "HB: Dark Tunnel After Enchanted Door",
+                "sections": [
+                   { 
+                      "name": "Torch",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 1175,
+                      "y": 1440
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Fountain",
+                "sections": [
+                   { 
+                      "name": "Health Vial",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 671,
+                      "y": 1818
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Ritual Table",
+                "sections": [
+                   { 
+                      "name": "Ritual Dagger",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 572,
+                      "y": 1702
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Altar Chest",
+                "sections": [
+                   { 
+                      "name": "Spell Ring (Lithomancy)",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 392,
+                      "y": 1637
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Blood Altar",
+                "sections": [
+                   { 
+                      "name": "10 Strange Coins",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 349,
+                      "y": 1600
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Small Pillar Top",
+                "sections": [
+                   { 
+                      "name": "Health Vial",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 655,
+                      "y": 1503
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Pillar Room Left",
+                "sections": [
+                   { 
+                      "name": "Crystal Shard",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 1041,
+                      "y": 1639
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Pillar Room Back Left",
+                "sections": [
+                   { 
+                      "name": "Wooden Shield",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 1013,
+                      "y": 1748
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Pillar Room Back Right",
+                "sections": [
+                   { 
+                      "name": "Blood Wine",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 913,
+                      "y": 1769
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Pillar Room Hidden Room",
+                "sections": [
+                   { 
+                      "name": "Spell Ring (Blood Strike)",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 827,
+                      "y": 1739
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Sewer Puzzle",
+                "sections": [
+                   { 
+                      "name": "Corrupted Key",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 142,
+                      "y": 1974
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Hidden Room In Sewer",
+                "sections": [
+                   { 
+                      "name": "VHS Tape",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 337,
+                      "y": 1719
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Ritual Table After Bridge",
+                "sections": [
+                   { 
+                      "name": "Spell Ring (Flame Flare)",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 777,
+                      "y": 1456
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Hidden Room Behind Pillar (Left)",
+                "sections": [
+                   { 
+                      "name": "Health Vial",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 535,
+                      "y": 1329
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Hidden Room Behind Pillar (Right)",
+                "sections": [
+                   { 
+                      "name": "Health Vial",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 561,
+                      "y": 1345
+                   }
+                ]
+             },
+             {
+                "name": "HB: Alcove on Path to Yosei Forest",
+                "sections": [
+                   { 
+                      "name": "Steel Spear",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 804,
+                      "y": 1279
+                   }
+                ]
+             },
+             {
+                "name": "HB: Temple Table in Sewer",
+                "sections": [
+                   { 
+                      "name": "Stone Club",
+                      "item_count": 1
+                   }
+                ],
+                "map_locations": [
+                   { 
+                      "map": "Hollow Basin",
+                      "x": 291,
+                      "y": 2295
+                   }
+                ]
+             }            
         ]
     },
     {
         "name": "Wing's Rest",
         "children": [
             {
-                "name": "Bench",
+                "name": "WR: Bench",
                 "sections": [
                     {
                         "name": "Crystal Shard",
@@ -121,7 +393,7 @@
                 ]
             },
             {
-                "name": "Clive Conversation",
+                "name": "WR: Clive's Gift",
                 "sections": [
                     {
                         "name": "Health Vial",
@@ -137,7 +409,7 @@
                 ]
             },
             {
-                "name": "Sheryl Shop",
+                "name": "WR: Sheryl Shop",
                 "sections": [
                     {
                         "name": "Enchanted Key",
@@ -173,7 +445,7 @@
                 ]
             },
             {
-                "name": "Rafters",
+                "name": "WR: Rafters",
                 "sections": [
                     {
                         "name": "Ocean Elixir",
@@ -194,7 +466,7 @@
         "name": "Great Well Surface",
         "children": [
             {
-                "name": "Demi by the Gate",
+                "name": "GWS: Demi's Gift",
                 "sections": [
                     {
                         "name": "Crystal Shard x 3",
@@ -215,7 +487,7 @@
         "name": "Laetus Chasm",
         "children": [
             {
-                "name": "Hidden Wall",
+                "name": "LC: Hidden Room",
                 "sections": [
                     {
                         "name": "Spell Ring (Ice Tear)",
@@ -231,7 +503,7 @@
                 ]
             },
             {
-                "name": "Invisible Path",
+                "name": "LC: Invisible Path to Cliffside",
                 "sections": [
                     {
                         "name": "Blessed Wind",
@@ -252,7 +524,7 @@
         "name": "Forbidden Archives",
         "children": [
             {
-                "name": "Back of Shelves",
+                "name": "FbA: Back Room Past Bridge",
                 "sections": [
                     {
                         "name": "Ocean Elixir",
@@ -268,7 +540,7 @@
                 ]
             },
             {
-                "name": "Strange Corpse",
+                "name": "FbA: Strange Corpse",
                 "sections": [
                     {
                         "name": "Spell Ring (Corpse Transformation)",
@@ -284,7 +556,7 @@
                 ]
             },
             {
-                "name": "Plant Bed",
+                "name": "FbA: Short Wall Near Trees",
                 "sections": [
                     {
                         "name": "Health Vial",
@@ -300,7 +572,7 @@
                 ]
             },
             {
-                "name": "In the Corner",
+                "name": "FbA: Against Wall Near Trees",
                 "sections": [
                     {
                         "name": "Light Urn",
@@ -316,7 +588,7 @@
                 ]
             },
             {
-                "name": "Pedestal Front",
+                "name": "FbA: Snail Lectern (Near)",
                 "sections": [
                     {
                         "name": "Spell Ring (Light Reveal)",
@@ -332,7 +604,7 @@
                 ]
             },
             {
-                "name": "Pedestal Back",
+                "name": "FbA: Snail Lectern (Far)",
                 "sections": [
                     {
                         "name": "Spell Ring (Blood Drain)",
@@ -348,7 +620,7 @@
                 ]
             },
             {
-                "name": "Hidden Room",
+                "name": "FbA: Hidden Room Upper Floor",
                 "sections": [
                     {
                         "name": "Wolfram Greatsword",
@@ -364,7 +636,7 @@
                 ]
             },
             {
-                "name": "Dead End Right Side",
+                "name": "FbA: Rug on Balcony",
                 "sections": [
                     {
                         "name": "Mana Vial",
@@ -380,7 +652,7 @@
                 ]
             },
             {
-                "name": "Bridge Roof",
+                "name": "FbA: Rooftops",
                 "sections": [
                     {
                         "name": "Earth Elixir",
@@ -396,7 +668,7 @@
                 ]
             },
             {
-                "name": "Near Daedalus",
+                "name": "FbA: Corner Near Daedalus",
                 "sections": [
                     {
                         "name": "Health Vial",
@@ -412,7 +684,7 @@
                 ]
             },
             {
-                "name": "UwU",
+                "name": "FbA: uwu",
                 "sections": [
                     {
                         "name": "Axe of Harming",
@@ -428,7 +700,7 @@
                 ]
             },
             {
-                "name": "Tree Base",
+                "name": "FbA: Near Twisty Tree",
                 "sections": [
                     {
                         "name": "Fairy Moss",
@@ -444,7 +716,7 @@
                 ]
             },
             {
-                "name": "Hidden Wall",
+                "name": "FbA: Hidden Room Lower Floor",
                 "sections": [
                     {
                         "name": "Crystal Shard",
@@ -460,7 +732,7 @@
                 ]
             },
             {
-                "name": "Daedalus",
+                "name": "FbA: Daedalus",
                 "sections": [
                     {
                         "name": "Black Book 1",

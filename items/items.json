@@ -52,7 +52,7 @@
         "stages": [
             {
                 "img": "images/items/item_enchanted_key_1.png",
-                "codes": "ekey_1",
+                "codes": "ekey_1, ekey",
                 "inherit_codes": true
             },
             {
@@ -61,5 +61,41 @@
                 "inherit_codes": true
             }
         ]
+    },
+    {
+        "name": "Blood Element",
+        "type": "toggle",
+        "img": "images/items/ele_blood.png",
+        "codes": "ele_blood"
+    },
+    {
+        "name": "Light Element",
+        "type": "toggle",
+        "img": "images/items/ele_light.png",
+        "codes": "ele_light"
+    },
+    {
+        "name": "Fire Element",
+        "type": "toggle",
+        "img": "images/items/ele_fire.png",
+        "codes": "ele_fire"
+    },
+    {
+        "name": "Dark Element",
+        "type": "toggle",
+        "img": "images/items/ele_dark.png",
+        "codes": "ele_dark"
+    },
+    {
+        "name": "Poison Element",
+        "type": "toggle",
+        "img": "images/items/ele_poison.png",
+        "codes": "ele_poison"
+    },
+    {
+        "name": "Wand of Power",
+        "type": "toggle",
+        "img": "images/items/ele_enigma.png",
+        "codes": "wop, ele_blood, ele_light, ele_fire, ele_dark, ele_poison"
     }
 ]
