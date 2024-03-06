@@ -114,7 +114,7 @@
         "img": "images/maps/map_forlorn_arena.png"
     },
     {
-        "name": "The Labyrinth of Ash",
+        "name": "Labyrinth of Ash",
         "location_size": 24,
         "location_border_thickness": 2,
         "img": "images/maps/map_labyrinth_of_ash.png"
