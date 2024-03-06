@@ -8,17 +8,17 @@
             {
                 "img": "images/items/item_vamp_w.png",
                 "codes": "vamp_white,vamp_symbol",
-                "inherit_codes": false
+                "inherit_codes": true
             },
             {
                 "img": "images/items/item_vamp_a.png",
-                "codes": "vamp_azure,vamp_symbol",
-                "inherit_codes": false
+                "codes": "vamp_azure",
+                "inherit_codes": true
             },
             {
                 "img": "images/items/item_vamp_e.png",
-                "codes": "vamp_emerald,vamp_symbol",
-                "inherit_codes": false
+                "codes": "vamp_emerald",
+                "inherit_codes": true
             }
         ]
     },
@@ -97,5 +97,53 @@
         "type": "toggle",
         "img": "images/items/ele_enigma.png",
         "codes": "wop, ele_blood, ele_light, ele_fire, ele_dark, ele_poison"
+    },
+    {
+        "name": "Terminus Prison Key",
+        "type": "toggle",
+        "img": "images/items/item_term_key.png",
+        "codes": "term_key"
+    },
+    {
+        "name": "VHS",
+        "type": "toggle",
+        "img": "images/items/item_vhs.png",
+        "codes": "vhs_tape_1"
+    },
+    {
+        "name": "White Tape",
+        "type": "toggle",
+        "img": "images/items/item_vhs_white.png",
+        "codes": "vhs_tape_2"
+    },
+    {
+        "name": "Earth Talisman",
+        "type": "toggle",
+        "img": "images/items/item_earth_talisman.png",
+        "codes": "e_talis"
+    },
+    {
+        "name": "Water Talisman",
+        "type": "toggle",
+        "img": "images/items/item_water_talisman.png",
+        "codes": "w_talis"
+    },
+    {
+        "name": "Ranged Attacks",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "ranged_attacks"
+    },
+    {
+        "name": "Dex / Solid Summons / Flight",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "dsf_checks"
+    },
+    {
+        "name": "Limbo",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "limbo"
     }
 ]

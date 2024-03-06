@@ -17,9 +17,17 @@
                             [
                                 "vamp_symbol",
                                 "bb",
-                                "ekey"           
+                                "ekey",
+                                "term_key",
+                                "vhs_tape_1",
+                                "vhs_tape_2",
+                                "w_talis",
+                                "e_talis",
+                                "ranged_attacks",
+                                "dsf_checks"           
                             ],
                             [
+                                "limbo",
                                 "wop",
                                 "ele_light",
                                 "ele_blood",
