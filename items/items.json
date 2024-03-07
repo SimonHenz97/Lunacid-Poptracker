@@ -145,5 +145,29 @@
         "type": "toggle",
         "img": "images/items/misc.png",
         "codes": "limbo"
+    },
+    {
+        "name": "Josiah's Skull",
+        "type": "toggle",
+        "img": "images/items/item_josiah_skull.png",
+        "codes": "jo_skull"
+    },
+    {
+        "name": "Strange Coins",
+        "type": "toggle",
+        "img": "images/items/item_strange_coin.png",
+        "codes": "scoins"
+    },
+    {
+        "name": "Jotunn Slayer",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "slayer"
+    },
+    {
+        "name": "Opened Ballroom",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "open_ballroom"
     }
 ]

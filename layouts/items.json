@@ -19,21 +19,31 @@
                                 "bb",
                                 "ekey",
                                 "term_key",
+                                "scoins"
+                            ],
+                            [
+                                "jo_skull",
                                 "vhs_tape_1",
                                 "vhs_tape_2",
                                 "w_talis",
-                                "e_talis",
-                                "ranged_attacks",
-                                "dsf_checks"           
+                                "e_talis"
                             ],
                             [
                                 "limbo",
                                 "wop",
                                 "ele_light",
-                                "ele_blood",
+                                "ele_blood"
+                            ],
+                            [
                                 "ele_fire",
                                 "ele_dark",
                                 "ele_poison"
+                            ],
+                            [
+                                "ranged_attacks",
+                                "dsf_checks",
+                                "slayer",
+                                "open_ballroom"
                             ]
                         ]
                     }

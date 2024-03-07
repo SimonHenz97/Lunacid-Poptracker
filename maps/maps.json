@@ -7,7 +7,7 @@
     },
     {
         "name": "Wing's Rest",
-        "location_size": 32,
+        "location_size": 24,
         "location_border_thickness": 2,
         "img": "images/maps/map_wings_rest.png"
     },

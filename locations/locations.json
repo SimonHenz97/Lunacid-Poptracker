@@ -101,6 +101,9 @@
             },
             {
                 "name": "HB: Dark Tunnel After Enchanted Door",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Torch",
@@ -117,6 +120,9 @@
              },
              {
                 "name": "HB: Temple Fountain",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -133,6 +139,9 @@
              },
              {
                 "name": "HB: Temple Ritual Table",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Ritual Dagger",
@@ -149,6 +158,9 @@
              },
              {
                 "name": "HB: Temple Altar Chest",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Lithomancy)",
@@ -165,6 +177,9 @@
              },
              {
                 "name": "HB: Temple Blood Altar",
+                "access_rules": [
+                    "ekey_1, ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "10 Strange Coins",
@@ -181,6 +196,9 @@
              },
              {
                 "name": "HB: Temple Small Pillar Top",
+                "access_rules": [
+                    "ekey_1, dsf_checks"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -197,6 +215,9 @@
              },
              {
                 "name": "HB: Temple Pillar Room Left",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Crystal Shard",
@@ -213,6 +234,9 @@
              },
              {
                 "name": "HB: Temple Pillar Room Back Left",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Wooden Shield",
@@ -229,6 +253,9 @@
              },
              {
                 "name": "HB: Temple Pillar Room Back Right",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Blood Wine",
@@ -245,6 +272,9 @@
              },
              {
                 "name": "HB: Temple Pillar Room Hidden Room",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Blood Strike)",
@@ -261,6 +291,9 @@
              },
              {
                 "name": "HB: Temple Sewer Puzzle",
+                "access_rules": [
+                    "ekey_1, ele_light, ranged_attacks"
+                ],
                 "sections": [
                    { 
                       "name": "Corrupted Key",
@@ -277,6 +310,9 @@
              },
              {
                 "name": "HB: Temple Hidden Room In Sewer",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "VHS Tape",
@@ -293,6 +329,9 @@
              },
              {
                 "name": "HB: Temple Ritual Table After Bridge",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Flame Flare)",
@@ -309,6 +348,9 @@
              },
              {
                 "name": "HB: Temple Hidden Room Behind Pillar (Left)",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -325,6 +367,9 @@
              },
              {
                 "name": "HB: Temple Hidden Room Behind Pillar (Right)",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -341,6 +386,9 @@
              },
              {
                 "name": "HB: Alcove on Path to Yosei Forest",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Steel Spear",
@@ -357,6 +405,9 @@
              },
              {
                 "name": "HB: Temple Table in Sewer",
+                "access_rules": [
+                    "ekey_1"
+                ],
                 "sections": [
                    { 
                       "name": "Stone Club",
@@ -409,7 +460,7 @@
                 ]
             },
             {
-                "name": "WR: Sheryl Shop",
+                "name": "Sheryl Shop",
                 "sections": [
                     {
                         "name": "Enchanted Key",
@@ -441,11 +492,19 @@
                         "map": "Wing's Rest",
                         "x": 864,
                         "y": 976
+                    },
+                    { 
+                      "map": "Boiling Grotto",
+                      "x": 474,
+                      "y": 286
                     }
                 ]
             },
             {
                 "name": "WR: Rafters",
+                "access_rules": [
+                    "dsf_checks"
+                ],
                 "sections": [
                     {
                         "name": "Ocean Elixir",
@@ -464,6 +523,10 @@
     },
     {
         "name": "Great Well Surface",
+        "access_rules": [
+            "dsf_checks",
+            "vamp_azure"
+        ],
         "children": [
             {
                 "name": "GWS: Demi's Gift",
@@ -485,6 +548,10 @@
     },
     {
         "name": "Laetus Chasm",
+        "access_rules": [
+            "dsf_checks",
+            "vamp_azure"
+        ],
         "children": [
             {
                 "name": "LC: Hidden Room",
@@ -522,6 +589,9 @@
     },
     {
         "name": "Forbidden Archives",
+        "access_rules": [
+            "dsf_checks"
+        ],
         "children": [
             {
                 "name": "FbA: Back Room Past Bridge",
@@ -768,6 +838,9 @@
     },
     {
         "name": "Yosei Forest",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "YF: Barrel Group",
@@ -843,6 +916,9 @@
              },
              {
                 "name": "YF: Blood Plant's Insides",
+                "access_rules": [
+                    "ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -875,6 +951,9 @@
              },
              {
                 "name": "YF: Hanging In The Trees",
+                "access_rules": [
+                    "ranged_attacks"
+                ],
                 "sections": [
                    { 
                       "name": "Elfen Sword",
@@ -907,6 +986,9 @@
              },
              {
                 "name": "YF: Room Defended by Blood Plant",
+                "access_rules": [
+                    "ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Earth Strike)",
@@ -925,6 +1007,9 @@
     },
     {
         "name": "Accursed Tomb",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "AT: Tomb With Sitting Corpse",
@@ -1040,6 +1125,9 @@
              },
              {
                 "name": "AT: Catacombs Hidden Room",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Ocean Elixir",
@@ -1088,6 +1176,9 @@
              },
              {
                 "name": "AT: TV",
+                "access_rules": [
+                    "ele_light, vhs_tape_1"
+                ],
                 "sections": [
                    { 
                       "name": "N/A",
@@ -1104,6 +1195,9 @@
              },
              {
                 "name": "AT: Red Skeleton",
+                "access_rules": [
+                    "ele_light, ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "Blade of Jusztina",
@@ -1120,6 +1214,9 @@
              },
              {
                 "name": "AT: Deep Coffin Storage",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Halbard",
@@ -1135,23 +1232,10 @@
                 ]
              },
              {
-                "name": "AT: Thirsty Corpse",
-                "sections": [
-                   { 
-                      "name": "N/A",
-                      "item_count": 1
-                   }
-                ],
-                "map_locations": [
-                   { 
-                      "map": "Accursed Tomb",
-                      "x": 1676,
-                      "y": 1022
-                   }
-                ]
-             },
-             {
                 "name": "AT: Mausoleum Hidden Chest",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Twisted Staff",
@@ -1168,6 +1252,9 @@
              },
              {
                 "name": "AT: Mausoleum Upper Alcove Table",
+                "access_rules": [
+                    "ele_light, dsf_checks"
+                ],
                 "sections": [
                    { 
                       "name": "Black Book",
@@ -1184,6 +1271,9 @@
              },
              {
                 "name": "AT: Mausoleum Maze (Early)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Holy Water",
@@ -1200,6 +1290,9 @@
              },
              {
                 "name": "AT: Mausoleum Maze (Middle)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -1216,6 +1309,9 @@
              },
              {
                 "name": "AT: Mausoleum Central Room (Right Path)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Ocean Elixir",
@@ -1232,6 +1328,9 @@
              },
              {
                 "name": "AT: Mausoleum Central Room (Right)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -1248,6 +1347,9 @@
              },
              {
                 "name": "AT: Mausoleum Central Room (Back)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Earth Elixir",
@@ -1264,6 +1366,9 @@
              },
              {
                 "name": "AT: Mausoleum Central Room (Left)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Holy Water",
@@ -1280,6 +1385,9 @@
              },
              {
                 "name": "AT: Mausoleum Central Room (Left Path)",
+                "access_rules": [
+                    "ele_light"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -1296,6 +1404,9 @@
              },
              {
                 "name": "AT: Kill Death",
+                "access_rules": [
+                    "ele_light, limbo"
+                ],
                 "sections": [
                    { 
                       "name": "10 Strange Coins",
@@ -1330,6 +1441,9 @@
     },
     {
         "name": "The Sanguine Sea",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "SS: Lake Demon",
@@ -1349,6 +1463,9 @@
              },
              {
                 "name": "SS: Pillar In Front of Castle Le Fanu",
+                "access_rules": [
+                    "dsf_checks"
+                ],
                 "sections": [
                    { 
                       "name": "Corrupted Dagger",
@@ -1365,6 +1482,9 @@
              },
              {
                 "name": "SS: Killing the Jotunn",
+                "access_rules": [
+                    "slayer"
+                ],
                 "sections": [
                    { 
                       "name": "10 Strange Coins",
@@ -1415,6 +1535,9 @@
     },
     {
         "name": "The Fetid Mire",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "FM: Room Left of Foyer",
@@ -1676,6 +1799,9 @@
     },
     {
         "name": "Castle Le Fanu",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "CLF: Outside Corner",
@@ -1695,6 +1821,9 @@
              },
              {
                 "name": "CLF: Upper Floor Coffin Room (Small Room)",
+                "access_rules": [
+                    "vamp_azure"
+                ],
                 "sections": [
                    { 
                       "name": "Earth Elixir",
@@ -1711,6 +1840,10 @@
              },
              {
                 "name": "CLF: Cattle Cell (South)",
+                "access_rules": [
+                    "ele_blood",
+                    "vamp_azure"
+                ],
                 "sections": [
                    { 
                       "name": "Spectral Candle",
@@ -1727,6 +1860,10 @@
              },
              {
                 "name": "CLF: Cattle Cell (West)",
+                "access_rules": [
+                    "ele_blood",
+                    "vamp_azure"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -1743,6 +1880,10 @@
              },
              {
                 "name": "CLF: Cattle Cell (Center)",
+                "access_rules": [
+                    "ele_blood, ele_fire",
+                    "vamp_azure, ele_fire"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Summon Ice Sword)",
@@ -1759,6 +1900,9 @@
              },
              {
                 "name": "CLF: Cattle Cell (North)",
+                "access_rules": [
+                    "ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "Vampiric Symbol (W)",
@@ -1775,6 +1919,9 @@
              },
              {
                 "name": "CLF: Hidden Cattle Cell",
+                "access_rules": [
+                    "ele_blood"
+                ],
                 "sections": [
                    { 
                       "name": "Wand of Power",
@@ -1791,6 +1938,9 @@
              },
              {
                 "name": "CLF: Hallway Rubble Room",
+                "access_rules": [
+                    "vamp_white"
+                ],
                 "sections": [
                    { 
                       "name": "Light Urn",
@@ -1807,6 +1957,9 @@
              },
              {
                 "name": "CLF: Hallway Dining Room",
+                "access_rules": [
+                    "vamp_white"
+                ],
                 "sections": [
                    { 
                       "name": "Blood Wine",
@@ -1823,6 +1976,9 @@
              },
              {
                 "name": "CLF: Garrat Resting Room (Fountain)",
+                "access_rules": [
+                    "vamp_white"
+                ],
                 "sections": [
                    { 
                       "name": "Holy Water",
@@ -1839,6 +1995,9 @@
              },
              {
                 "name": "CLF: Garrat Resting Room (Wall)",
+                "access_rules": [
+                    "vamp_white"
+                ],
                 "sections": [
                    { 
                       "name": "Crossbow",
@@ -1855,6 +2014,9 @@
              },
              {
                 "name": "CLF: Hallway Dead End Before Blue Doors",
+                "access_rules": [
+                    "vamp_white"
+                ],
                 "sections": [
                    { 
                       "name": "Vampiric Symbol (A)",
@@ -1871,10 +2033,17 @@
              },
              {
                 "name": "CLF: Ballroom Window",
+                "access_rules": [
+                    "ele_dark, ranged_attacks",
+                    "ele_dark, dsf_checks",
+                    "ele_poison, ranged_attacks",
+                    "ele_poison, dsf_checks"
+                ],
                 "sections": [
                    { 
                       "name": "N/A",
-                      "item_count": 1
+                      "item_count": 1,
+                      "hosted_item": "open_ballroom"
                    }
                 ],
                 "map_locations": [
@@ -1887,6 +2056,9 @@
              },
              {
                 "name": "CLF: Upper Floor Coffin Room (Large Room)",
+                "access_rules": [
+                    "vamp_azure"
+                ],
                 "sections": [
                    { 
                       "name": "Ocean Elixir",
@@ -1903,6 +2075,9 @@
              },
              {
                 "name": "CLF: Upper Floor Coffin Room (Double)",
+                "access_rules": [
+                    "vamp_emerald"
+                ],
                 "sections": [
                    { 
                       "name": "Blade of Ophelia",
@@ -1919,6 +2094,9 @@
              },
              {
                 "name": "CLF:  Upper Floor Coffin Room (Hallway)",
+                "access_rules": [
+                    "vamp_azure"
+                ],
                 "sections": [
                    { 
                       "name": "Vampiric Symbol (E)",
@@ -1935,6 +2113,9 @@
              },
              {
                 "name": "CLF: VCR Room",
+                "access_rules": [
+                    "vamp_azure, vhs_tape_2"
+                ],
                 "sections": [
                    { 
                       "name": "N/A",
@@ -1953,6 +2134,9 @@
     },
     {
         "name": "A Holy Battlefield",
+        "access_rules": [
+            "ekey_1"
+        ],
         "children": [
             {
                 "name": "AHB: Sngula Umbra's Remains",
@@ -1974,6 +2158,9 @@
     },
     {
         "name": "Forest Canopy",
+        "access_rules": [
+            "ekey_2"
+        ],
         "children": [
             {
                 "name": "FC: Branch Lower Edge",
@@ -2059,6 +2246,9 @@
     },
     {
         "name": "Sealed Ballroom",
+        "access_rules": [
+            "open_ballroom"
+        ],
         "children": [
             {
                 "name": "SB: Entry Small Room Lounge",
@@ -2224,6 +2414,9 @@
     },
     {
         "name": "Boiling Grotto",
+        "access_rules": [
+            "ekey_1, vamp_azure"
+        ],
         "children": [
             {
                 "name": "BG: Corpse Beneath Entrance",
@@ -2512,59 +2705,14 @@
                       "y": 386
                    }
                 ]
-             },
-             {
-                "name": "BG: Sheryl Shop",
-                "sections": [
-                   { 
-                      "name": "SEE WR SHERYL",
-                      "item_count": 1
-                   }
-                ],
-                "map_locations": [
-                   { 
-                      "map": "Boiling Grotto",
-                      "x": 474,
-                      "y": 286
-                   }
-                ]
-             },
-             {
-                "name": "BG: Furnace 1",
-                "sections": [
-                   { 
-                      "name": "N/A",
-                      "item_count": 1
-                   }
-                ],
-                "map_locations": [
-                   { 
-                      "map": "Boiling Grotto",
-                      "x": 1065,
-                      "y": 402
-                   }
-                ]
-             },
-             {
-                "name": "BG: Furnace 2",
-                "sections": [
-                   { 
-                      "name": "N/A",
-                      "item_count": 1
-                   }
-                ],
-                "map_locations": [
-                   { 
-                      "map": "Boiling Grotto",
-                      "x": 1058,
-                      "y": 633
-                   }
-                ]
              }
         ]
     },
     {
         "name": "Tower of Abyss",
+        "access_rules": [
+            "ekey_1, vamp_azure"
+        ],
         "children": [
             {
                 "name": "TA: Floor 5",
@@ -2746,6 +2894,9 @@
     },
     {
         "name": "Throne Chamber",
+        "access_rules": [
+            "ekey_1, vamp_emerald"
+        ],
         "children": [
             {
                 "name": "TC: Crilall's Book Repository",
@@ -2767,9 +2918,15 @@
     },
     {
         "name": "Terminus Prison",
+        "access_rules": [
+            "ekey_1, vamp_emerald"
+        ],
         "children": [
             {
                 "name": "TP: Third Floor Locked Cell Left",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Cloth Bandage",
@@ -2786,6 +2943,9 @@
              },
              {
                 "name": "TP: Third Floor Locked Cell Right",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Ashes",
@@ -2802,6 +2962,9 @@
              },
              {
                 "name": "TP: Third Floor Locked Cell South",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Broken Lance",
@@ -2818,6 +2981,9 @@
              },
              {
                 "name": "TP: Almost Bottomless Pit",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Icarian Flight)",
@@ -2978,6 +3144,9 @@
              },
              {
                 "name": "TP: Fourth Floor Cell Hanging Remains",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Health Vial",
@@ -2994,6 +3163,9 @@
              },
              {
                 "name": "TP: Fourth Floor Maledictus Secret",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Spell Ring (Blue Flame Arc)",
@@ -3010,6 +3182,9 @@
              },
              {
                 "name": "TP: Fourth Floor Hidden Jailer Sleeping Spot",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Holy Water",
@@ -3026,6 +3201,9 @@
              },
              {
                 "name": "TP: Fourth Floor Jailer Break Room",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Mana Vial",
@@ -3042,6 +3220,9 @@
              },
              {
                 "name": "TP: Fourth Floor Collapsed Tunnel",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Hammer of Cruelty",
@@ -3058,6 +3239,9 @@
              },
              {
                 "name": "TP: Fourth Floor Monk Room",
+                "access_rules": [
+                    "term_key"
+                ],
                 "sections": [
                    { 
                       "name": "Ectoplasm",
@@ -3084,6 +3268,9 @@
     },
     {
         "name": "Forlorn Arena",
+        "access_rules": [
+            "ekey_1, vamp_emerald, term_key"
+        ],
         "children": [
             {
                 "name": "FlA: Corpse Waiting For A Full Moon",
@@ -3377,6 +3564,9 @@
     },
     {
         "name": "Labyrinth of Ash",
+        "access_rules": [
+            "ekey_1, vamp_emerald"
+        ],
         "children": [
             {
                 "name": "LA: Entry Coffin",
