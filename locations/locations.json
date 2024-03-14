@@ -871,6 +871,9 @@
                    },
                    { 
                       "name": "Give Josiah's Skull",
+                      "access_rules": [
+                        "jo_skull"
+                    ],
                       "item_count": 1
                    }
                 ],

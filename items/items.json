@@ -96,7 +96,7 @@
         "name": "Wand of Power",
         "type": "toggle",
         "img": "images/items/ele_enigma.png",
-        "codes": "wop, ele_blood, ele_light, ele_fire, ele_dark, ele_poison"
+        "codes": "wop, ele_light, ele_fire, ele_dark, ele_poison"
     },
     {
         "name": "Terminus Prison Key",
