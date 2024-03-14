@@ -6,6 +6,12 @@
         "img": "images/maps/map_interconnections.png"
     },
     {
+        "name": "Dropsanity",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/map_dropsanity.png"
+    },
+    {
         "name": "Wing's Rest",
         "location_size": 24,
         "location_border_thickness": 2,

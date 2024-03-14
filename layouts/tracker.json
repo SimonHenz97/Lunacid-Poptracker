@@ -17,7 +17,7 @@
                             "dock": "top",
                             "content": {
                                 "type": "layout",
-                                "key": "shared_item_grid"
+                                "key": "item_grid"
                             }
                         }
                     ]
@@ -31,6 +31,15 @@
                                 "type": "map",
                                 "maps": [
                                     "Interconnections"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dropsanity",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Dropsanity"
                                 ]
                             }
                         },
@@ -248,7 +257,7 @@
                                 "type": "layout",
                                 "h_alignment": "center",
                                 "v_alignment": "center",
-                                "key": "shared_item_grid"
+                                "key": "item_grid"
                             }
                         }
                     ]
@@ -262,6 +271,15 @@
                                 "type": "map",
                                 "maps": [
                                     "Interconnections"
+                                ]
+                            }
+                        },
+                        {
+                            "title": "Dropsanity",
+                            "content": {
+                                "type": "map",
+                                "maps": [
+                                    "Dropsanity"
                                 ]
                             }
                         },
