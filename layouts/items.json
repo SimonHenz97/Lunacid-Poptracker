@@ -38,8 +38,8 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["limbo", "wop", "ele_light", "ele_blood"],
-                            ["ele_fire", "ele_dark", "ele_poison"]
+                            ["wop", "ele_light", "ele_blood", "ele_fire", "ele_dark"],
+                            ["ele_poison", "limbo"]
                         ]
                     }
                 ]

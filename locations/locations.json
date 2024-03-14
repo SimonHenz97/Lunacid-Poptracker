@@ -3762,7 +3762,14 @@
                       "name": " ",
                       "item_count": 1
                    }
-                ]
+                ],
+                "map_locations": [ 
+                  { 
+                     "map": "Chamber of Fate", 
+                     "x": 474, 
+                     "y": 730 
+                  } 
+               ]
          }
         ]
     },
@@ -3842,7 +3849,10 @@
                ]
             },
             {
-               "name": "Mummy: Rusted Sword Drop", 
+               "name": "Mummy: Rusted Sword Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Rusted Sword", 
@@ -3858,7 +3868,10 @@
                ]
             },
             {
-               "name": "Kodama: Summon Kodama Drop", 
+               "name": "Kodama: Summon Kodama Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Spell Ring (Summon Kodama)", 
@@ -3906,7 +3919,10 @@
                ]
             },
             {
-               "name": "Skeleton: Skeleton Axe Drop", 
+               "name": "Skeleton: Skeleton Axe Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Skeleton Axe", 
@@ -3922,7 +3938,10 @@
                ]
             },
             {
-               "name": "Skeleton: Dark Skull Drop", 
+               "name": "Skeleton: Dark Skull Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Spell Ring (Dark Skull)", 
@@ -3938,7 +3957,10 @@
                ]
             },
             {
-               "name": "Phantom: Cursed Blade Drop", 
+               "name": "Phantom: Cursed Blade Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Cursed Blade", 
@@ -3954,7 +3976,10 @@
                ]
             },
             {
-               "name": "Obsidian Skeleton: Obsidian Cursebrand Drop", 
+               "name": "Obsidian Skeleton: Obsidian Cursebrand Drop",
+               "access_rules": [
+                  "ekey_1, vamp_azure"
+              ], 
                "sections": [ 
                   { 
                      "name": "Obsidian Cursebrand", 
@@ -3970,7 +3995,10 @@
                ]
             },
             {
-               "name": "Obsidian Skeleton: Obsidian Poisonguard Drop", 
+               "name": "Obsidian Skeleton: Obsidian Poisonguard Drop",
+               "access_rules": [
+                  "ekey_1, vamp_azure"
+              ], 
                "sections": [ 
                   { 
                      "name": "Obsidian Poisonbrand", 
@@ -3986,7 +4014,10 @@
                ]
             },
             {
-               "name": "Anpu: Golden Kopesh Drop", 
+               "name": "Anpu: Golden Kopesh Drop",
+               "access_rules": [
+                  "ekey_1, vamp_azure"
+              ], 
                "sections": [ 
                   { 
                      "name": "Golden Kopesh", 
@@ -4002,7 +4033,10 @@
                ]
             },
             {
-               "name": "Anpu: Golden Sickle Drop", 
+               "name": "Anpu: Golden Sickle Drop",
+               "access_rules": [
+                  "ekey_1, vamp_azure"
+              ], 
                "sections": [ 
                   { 
                      "name": "Golden Sickle", 
@@ -4018,7 +4052,10 @@
                ]
             },
             {
-               "name": "Malformed Horse: Brittle Arming Sword Drop", 
+               "name": "Malformed Horse: Brittle Arming Sword Drop",
+               "access_rules": [
+                  "open_ballroom"
+              ], 
                "sections": [ 
                   { 
                      "name": "Brittle Arming Sword", 
@@ -4034,7 +4071,10 @@
                ]
             },
             {
-               "name": "Jailor: Jailor's Candle Drop", 
+               "name": "Jailor: Jailor's Candle Drop",
+               "access_rules": [
+                  "ekey_1, vamp_emerald, term_key"
+              ], 
                "sections": [ 
                   { 
                      "name": "Jailor's Candle", 
@@ -4050,7 +4090,11 @@
                ]
             },
             {
-               "name": "Lyrian Longsword Drop", 
+               "name": "Lyrian Longsword Drop",
+               "access_rules": [
+                  "ekey_1, vamp_white",
+                  "ele_blood"
+              ], 
                "sections": [ 
                   { 
                      "name": "Lyrian Longsword", 
@@ -4114,7 +4158,10 @@
                ]
             },
             {
-               "name": "Abyssal Demon: Ocean Elixir Drop", 
+               "name": "Abyssal Demon: Ocean Elixir Drop",
+               "access_rules": [
+                  "ekey_1"
+              ], 
                "sections": [ 
                   { 
                      "name": "Ocean Elixir", 
