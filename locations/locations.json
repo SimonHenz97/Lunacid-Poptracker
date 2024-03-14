@@ -3750,7 +3750,27 @@
         ]
     },
     {
+      "name": "Chamber of Fate",
+        "access_rules": [
+         "ekey_1, vamp_emerald, term_key, e_talis, w_talis" 
+        ],
+        "children": [
+         {
+            "name": "CF: Calamis' Weapon of Choice",
+                "sections": [
+                   { 
+                      "name": " ",
+                      "item_count": 1
+                   }
+                ]
+         }
+        ]
+    },
+    {
         "name": "Grave of the Sleeper",
+        "access_rules": [
+         "ekey_1, vamp_emerald, term_key, e_talis, w_talis" 
+        ],
         "children": [
             {
                 "name": "GoS: LUNACID Ending",
@@ -3800,6 +3820,315 @@
                    }
                 ]
              }
+        ]
+    },
+    {
+        "name": "Dropsanity",
+        "children": [
+            {
+               "name": "Snail: Summon Snail Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Spell Ring (Summon Snail)", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 166 
+                  } 
+               ]
+            },
+            {
+               "name": "Mummy: Rusted Sword Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Rusted Sword", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 436 
+                  } 
+               ]
+            },
+            {
+               "name": "Kodama: Summon Kodama Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Spell Ring (Summon Kodama)", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 706 
+                  } 
+               ]
+            },
+            {
+               "name": "Chimera: Quick Stride Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Spell Ring (Quick Stride)", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 976 
+                  } 
+               ]
+            },
+            {
+               "name": "Milk Snail: Ice Sickle Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Ice Sickle", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 1246 
+                  } 
+               ]
+            },
+            {
+               "name": "Skeleton: Skeleton Axe Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Skeleton Axe", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 1516 
+                  } 
+               ]
+            },
+            {
+               "name": "Skeleton: Dark Skull Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Spell Ring (Dark Skull)", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 1786 
+                  } 
+               ]
+            },
+            {
+               "name": "Phantom: Cursed Blade Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Cursed Blade", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 573, 
+                     "y": 2056 
+                  } 
+               ]
+            },
+            {
+               "name": "Obsidian Skeleton: Obsidian Cursebrand Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Obsidian Cursebrand", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 166 
+                  } 
+               ]
+            },
+            {
+               "name": "Obsidian Skeleton: Obsidian Poisonguard Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Obsidian Poisonbrand", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 436 
+                  } 
+               ]
+            },
+            {
+               "name": "Anpu: Golden Kopesh Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Golden Kopesh", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 706 
+                  } 
+               ]
+            },
+            {
+               "name": "Anpu: Golden Sickle Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Golden Sickle", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 976 
+                  } 
+               ]
+            },
+            {
+               "name": "Malformed Horse: Brittle Arming Sword Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Brittle Arming Sword", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 1246 
+                  } 
+               ]
+            },
+            {
+               "name": "Jailor: Jailor's Candle Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Jailor's Candle", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 1516 
+                  } 
+               ]
+            },
+            {
+               "name": "Lyrian Longsword Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Lyrian Longsword", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 1786 
+                  } 
+               ]
+            },
+            {
+               "name": "Sucsarian: Sucsarian Spear", 
+               "sections": [ 
+                  { 
+                     "name": "Sucsarian Spear", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 1337, 
+                     "y": 2056 
+                  } 
+               ]
+            },
+            {
+               "name": "Sucsarian: Sucsarian Dagger Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Sucsarian Dagger", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 2100, 
+                     "y": 166 
+                  } 
+               ]
+            },
+            {
+               "name": "Cetea: Tornado Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Spell Ring (Tornado)", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 2100, 
+                     "y": 436 
+                  } 
+               ]
+            },
+            {
+               "name": "Abyssal Demon: Ocean Elixir Drop", 
+               "sections": [ 
+                  { 
+                     "name": "Ocean Elixir", 
+                     "item_count": 1 
+                  } 
+               ], 
+               "map_locations": [ 
+                  { 
+                     "map": "Dropsanity", 
+                     "x": 2100, 
+                     "y": 706 
+                  } 
+               ]
+            }
         ]
     }
 ]

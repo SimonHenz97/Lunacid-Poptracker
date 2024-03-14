@@ -14,37 +14,76 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            [
-                                "vamp_symbol",
-                                "bb",
-                                "ekey",
-                                "term_key",
-                                "scoins"
-                            ],
-                            [
-                                "jo_skull",
-                                "vhs_tape_1",
-                                "vhs_tape_2",
-                                "w_talis",
-                                "e_talis"
-                            ],
-                            [
-                                "limbo",
-                                "wop",
-                                "ele_light",
-                                "ele_blood"
-                            ],
-                            [
-                                "ele_fire",
-                                "ele_dark",
-                                "ele_poison"
-                            ],
-                            [
-                                "ranged_attacks",
-                                "dsf_checks",
-                                "slayer",
-                                "open_ballroom"
-                            ]
+                            ["vamp_symbol", "bb", "ekey", "term_key", "scoins"],
+                            ["jo_skull", "vhs_tape_1", "vhs_tape_2", "w_talis", "e_talis"],
+                            ["slayer"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "element_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "10, 10",
+                        "h_alignment": "left",
+                        "rows": [
+                            ["limbo", "wop", "ele_light", "ele_blood"],
+                            ["ele_fire", "ele_dark", "ele_poison"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "logic_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "10, 10",
+                        "h_alignment": "left",
+                        "rows": [
+                            ["ranged_attacks", "dsf_checks", "open_ballroom"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "settings_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "10, 10",
+                        "h_alignment": "left",
+                        "rows": [
+                            []
                         ]
                     }
                 ]
