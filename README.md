@@ -25,7 +25,9 @@ _**RIGHT**_
         - pack files
 
 
-If you intend to use the Archipelago Randomizer then head over to the [installation guide](https://github.com/Witchybun/LunacidAPClient/blob/main/Documentation/Setup.md) to setup the mod and generate a seed.
+If you intend to use the Archipelago Randomizer then head over to the [installation guide](https://github.com/Witchybun/LunacidAPClient/blob/main/Documentation/Setup.md) to setup the mod and generate a seed. 
+
+Once implemented, to enable auto tracking click on the AP icon in the upper left area, enter the Archipelago host and port, the Player Name and finally a password if you need one. 
 
 ## Current and Planned Features
 
