@@ -47,6 +47,7 @@ If you intend to use the Archipelago Randomizer then head over to the [installat
     - [ ] Dropsanity
     - [x] Element Rando
     - [ ] Switch Locks
+    - [ ] Secret Door Lock
 - [ ] AP Auto Tracking
 
 The above list is will be subject to change as randomizer features are added/removed but will stand as the goal for what a 1.0.0 build will contain. 
