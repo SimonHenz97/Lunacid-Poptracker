@@ -135,7 +135,19 @@
         "codes": "ranged_attacks"
     },
     {
-        "name": "Dex / Solid Summons / Flight",
+        "name": "High Dex Jumps",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "hdex_jumps"
+    },
+    {
+        "name": "Solid/Floating Summon Jumps",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "summon_jumps"
+    },
+    {
+        "name": "Flight",
         "type": "toggle",
         "img": "images/items/misc.png",
         "codes": "dsf_checks"
@@ -165,33 +177,102 @@
         "codes": "slayer"
     },
     {
+        "name": "Dusty Crystal Orb",
+        "type": "toggle",
+        "img": "images/items/item_dusty_orb.png",
+        "codes": "dc_orb"
+    },
+    {
         "name": "Opened Ballroom",
         "type": "toggle",
-        "img": "images/items/lock_ballroom.png",
         "codes": "open_ballroom"
+    },
+    {
+        "name": "Temple of Silence Opened",
+        "type": "toggle",
+        "codes": "tos_switch_opened"
+    },
+    {
+        "name": "Forlorn Arena Opened",
+        "type": "toggle",
+        "codes": "arena_lock_opened"
+    },
+    {
+        "name": "North Boiler",
+        "type": "toggle",
+        "codes": "boil_switch_1"
+    },
+    {
+        "name": "South Boiler",
+        "type": "toggle",
+        "codes": "boil_switch_2"
+    },
+    {
+        "name": "Major Skips",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/setting_off.png",
+                "codes": "major_skips, major_skips_off",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/setting_on.png",
+                "codes": "major_skips, major_skips_on",
+                "inherit_codes": false
+            }
+        ]
     },
     {
         "name": "Dropsanity Enabled",
         "type": "toggle",
-        "img": "images/items/misc.png",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "drops_on"
     },
     {
         "name": "Shopsanity Enabled",
         "type": "toggle",
-        "img": "images/items/misc.png",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "shops_on"
     },
     {
         "name": "Switch Locks Enabled",
-        "type": "toggle",
-        "img": "images/items/misc.png",
-        "codes": "slocks_on"
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/setting_off.png",
+                "codes": "slocks, slocks_off",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/setting_on.png",
+                "codes": "slocks, slocks_on",
+                "inherit_codes": false
+            }
+        ]
     },
     {
-        "name": "Secret Door Lock",
-        "type": "toggle",
-        "img": "images/items/misc.png",
-        "codes": "sdoors_on"
+        "name": "Secret Doors Enabled",
+        "type": "progressive",
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/items/setting_off.png",
+                "codes": "sdoors, sdoors_off",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/items/setting_on.png",
+                "codes": "sdoors, sdoors_on",
+                "inherit_codes": false
+            }
+        ]
     }
 ]

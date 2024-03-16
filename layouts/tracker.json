@@ -290,7 +290,7 @@
                         },
                         {
                             "type": "group",
-                            "header": "Elements",
+                            "header": "Elements & Spells",
                             "dock": "top",
                             "margin": "0,0,3,0",
                             "content": {
@@ -300,12 +300,12 @@
                         },
                         {
                             "type": "group",
-                            "header": "Logic & Access",
+                            "header": "Tricks",
                             "dock": "top",
                             "margin": "0,0,3,0",
                             "content": {
                                 "type": "layout",
-                                "key": "logic_grid"
+                                "key": "tricks_grid"
                             }
                         },
                         {

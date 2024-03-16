@@ -46,7 +46,7 @@
             }
         ]
     },
-    "logic_grid": {
+    "tricks_grid": {
         "type": "array",
         "orientation": "vertical",
         "margin": "0,0",
@@ -61,7 +61,7 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["ranged_attacks", "dsf_checks", "open_ballroom"]
+                            ["ranged_attacks", "hdex_jumps", "summon_jumps", "dsf_checks", "major_skips"]
                         ]
                     }
                 ]
@@ -83,7 +83,7 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["drops_on", "shops_on", "slocks_on", "sdoors_on"]
+                            ["drops_on", "shops_on", "slocks", "sdoors"]
                         ]
                     }
                 ]
