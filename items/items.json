@@ -167,7 +167,31 @@
     {
         "name": "Opened Ballroom",
         "type": "toggle",
-        "img": "images/items/misc.png",
+        "img": "images/items/lock_ballroom.png",
         "codes": "open_ballroom"
+    },
+    {
+        "name": "Dropsanity Enabled",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "drops_on"
+    },
+    {
+        "name": "Shopsanity Enabled",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "shops_on"
+    },
+    {
+        "name": "Switch Locks Enabled",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "slocks_on"
+    },
+    {
+        "name": "Secret Door Lock",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "sdoors_on"
     }
 ]
