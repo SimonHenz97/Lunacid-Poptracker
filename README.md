@@ -48,7 +48,7 @@ Once implemented, to enable auto tracking click on the AP icon in the upper left
     - [x] Shopsanity
     - [x] Dropsanity
     - [x] Element Rando
-    - [ ] Switch Locks
+    - [x] Switch Locks
     - [ ] Secret Door Lock
 - [ ] AP Auto Tracking
 
