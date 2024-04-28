@@ -166,7 +166,9 @@
     },
     {
         "name": "Strange Coins",
-        "type": "toggle",
+        "type": "consumable",
+        "min_quantity": 0,
+        "max_quantity": 60,
         "img": "images/items/item_strange_coin.png",
         "codes": "scoins"
     },

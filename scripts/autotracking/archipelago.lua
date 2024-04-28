@@ -11,6 +11,34 @@ SLOT_DATA = nil
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
+function has_value (t, val)
+    for i, v in ipairs(t) do
+        if v == val then return 1 end
+    end
+    return 0
+end
+
+
+function dump_table(o, depth)
+    if depth == nil then
+        depth = 0
+    end
+    if type(o) == 'table' then
+        local tabs = ('\t'):rep(depth)
+        local tabs2 = ('\t'):rep(depth + 1)
+        local s = '{\n'
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then
+                k = '"' .. k .. '"'
+            end
+            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump_table(v, depth + 1) .. ',\n'
+        end
+        return s .. tabs .. '}'
+    else
+        return tostring(o)
+    end
+end
+
 function onClear(slot_data)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
@@ -18,52 +46,57 @@ function onClear(slot_data)
     SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
-    for _, v in pairs(LOCATION_MAPPING) do
-        if v[1] then
-            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: clearing location %s", v[1]))
-            end
-            local obj = Tracker:FindObjectForCode(v[1])
-            if obj then
-                if v[1]:sub(1, 1) == "@" then
-                    obj.AvailableChestCount = obj.ChestCount
-                else
-                    obj.Active = false
+    for _, locations_array in pairs(LOCATION_MAPPING) do
+        for _, location in pairs(locations_array) do
+            if location then
+                if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: clearing location %s", location))
                 end
-            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: could not find object for code %s", v[1]))
+                local obj = Tracker:FindObjectForCode(location)
+                if obj then
+                    if location:sub(1, 1) == "@" then
+                        obj.AvailableChestCount = obj.ChestCount
+                    else
+                        obj.Active = false
+                    end
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: could not find object for code %s", location))
+                end
             end
         end
+        
     end
     -- reset items
-    for _, v in pairs(ITEM_MAPPING) do
-        if v[1] and v[2] then
-            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: clearing item %s of type %s", v[1], v[2]))
-            end
-            local obj = Tracker:FindObjectForCode(v[1])
-            if obj then
-                if v[2] == "toggle" then
-                    obj.Active = false
-                elseif v[2] == "progressive" then
-                    obj.CurrentStage = 0
-                    obj.Active = false
-                elseif v[2] == "consumable" then
-                    obj.AcquiredCount = 0
-                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                    print(string.format("onClear: unknown item type %s for code %s", v[2], v[1]))
+    for _, items_array in pairs(ITEM_MAPPING) do
+        local items = items_array[1]
+        local item_type = items_array[2]
+        for _, item in pairs(items) do
+            if item and item_type then
+                if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: clearing item %s of type %s", item, item_type))
                 end
-            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-                print(string.format("onClear: could not find object for code %s", v[1]))
+                local obj = Tracker:FindObjectForCode(item)
+                if obj then
+                    if item_type == "toggle" then
+                        obj.Active = false
+                    elseif item_type == "progressive" then
+                        obj.CurrentStage = 0
+                        obj.Active = false
+                    elseif item_type == "consumable" then
+                        obj.AcquiredCount = 0
+                    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                        print(string.format("onClear: unknown item type %s for code %s", item_type, item))
+                    end
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: could not find object for code %s", item))
+                end
             end
         end
     end
     LOCAL_ITEMS = {}
     GLOBAL_ITEMS = {}
+    AutoFill()
     -- manually run snes interface functions after onClear in case we are already ingame
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here
-    end
 end
 
 -- called when an item gets collected
@@ -77,86 +110,93 @@ function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then
         return
     end
+   
     local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
-    local v = ITEM_MAPPING[item_id]
-    if not v then
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onItem: could not find item mapping for id %s", item_id))
-        end
-        return
+    CheckForElement(item_id)
+    print("after check")
+    local v = nil
+    if not ITEM_MAPPING[item_id] == nil then
+        v = ITEM_MAPPING[item_id]
     end
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onItem: code: %s, type %s", v[1], v[2]))
-    end
-    if not v[1] then
-        return
-    end
-    local obj = Tracker:FindObjectForCode(v[1])
-    if obj then
-        if v[2] == "toggle" then
-            obj.Active = true
-        elseif v[2] == "progressive" then
-            if obj.Active then
-                obj.CurrentStage = obj.CurrentStage + 1
-            else
-                obj.Active = true
+    if not v == nil then
+        local items = v[1]
+        local item_type = v[2]
+        if not v then
+            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onItem: could not find item mapping for id %s", item_id))
             end
-        elseif v[2] == "consumable" then
-            obj.AcquiredCount = obj.AcquiredCount + obj.Increment
-        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print(string.format("onItem: unknown item type %s for code %s", v[2], v[1]))
+            return
         end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onItem: could not find object for code %s", v[1]))
-    end
-    -- track local items via snes interface
-    if is_local then
-        if LOCAL_ITEMS[v[1]] then
-            LOCAL_ITEMS[v[1]] = LOCAL_ITEMS[v[1]] + 1
-        else
-            LOCAL_ITEMS[v[1]] = 1
+        for _, item in pairs(items) do
+            if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onItem: code: %s, type %s", item, item_type))
+            end
+            if not item then
+                return
+            end
+            local obj = Tracker:FindObjectForCode(item)
+            if obj then
+                if item_type == "toggle" then
+                    obj.Active = true
+                elseif item_type == "progressive" then
+                    if obj.Active then
+                        obj.CurrentStage = obj.CurrentStage + 1
+                    else
+                        obj.Active = true
+                    end
+                elseif item_type == "consumable" then
+                    obj.AcquiredCount = obj.AcquiredCount + obj.Increment
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onItem: unknown item type %s for code %s", item_type, item))
+                end
+            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onItem: could not find object for code %s", item))
+            end
+        
+            -- track local items via snes interface
+            if is_local then
+                if LOCAL_ITEMS[item] then
+                    LOCAL_ITEMS[item] = LOCAL_ITEMS[item] + 1
+                else
+                    LOCAL_ITEMS[item] = 1
+                end
+            else
+                if GLOBAL_ITEMS[item] then
+                    GLOBAL_ITEMS[item] = GLOBAL_ITEMS[item] + 1
+                else
+                    GLOBAL_ITEMS[item] = 1
+                end
+            end
         end
-    else
-        if GLOBAL_ITEMS[v[1]] then
-            GLOBAL_ITEMS[v[1]] = GLOBAL_ITEMS[v[1]] + 1
-        else
-            GLOBAL_ITEMS[v[1]] = 1
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
+            print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
         end
-    end
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("local items: %s", dump_table(LOCAL_ITEMS)))
-        print(string.format("global items: %s", dump_table(GLOBAL_ITEMS)))
-    end
-    if PopVersion < "0.20.1" or AutoTracker:GetConnectionState("SNES") == 3 then
-        -- add snes interface functions here for local item tracking
     end
 end
 
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("called onLocation: %s, %s", location_id, location_name))
-    end
-    if not AUTOTRACKER_ENABLE_LOCATION_TRACKING then
-        return
-    end
-    local v = LOCATION_MAPPING[location_id]
-    if not v and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+    local location_array = LOCATION_MAPPING[location_id]
+    if not location_array or not location_array[1] then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
-    end
-    if not v[1] then
         return
     end
-    local obj = Tracker:FindObjectForCode(v[1])
-    if obj then
-        if v[1]:sub(1, 1) == "@" then
-            obj.AvailableChestCount = obj.AvailableChestCount - 1
+    
+    for _, location in pairs(location_array) do
+        local location_obj = Tracker:FindObjectForCode(location)
+        -- print(location, location_obj)
+        if location_obj then
+
+            if location:sub(1, 1) == "@" then
+                location_obj.AvailableChestCount = location_obj.AvailableChestCount - 1
+            else
+                location_obj.Active = true
+            end
         else
-            obj.Active = true
+            print(string.format("onLocation: could not find location_object for code %s", location))
         end
-    elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("onLocation: could not find object for code %s", v[1]))
     end
 end
 
@@ -188,3 +228,50 @@ if AUTOTRACKER_ENABLE_LOCATION_TRACKING then
 end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+
+function AutoFill()
+    if SLOT_DATA == nil  then
+        print("its fucked")
+        return
+    end
+    print(dump_table(SLOT_DATA))
+
+    -- mapDropsanity = {[0]=0,[1]=1}
+    -- mapShopsanity = {[0]=0,[1]=1}
+    -- mapSwitchlocks = {[0]=0,[1]=1}
+    -- mapSecretdoorlocks = {[0]=0,[1]=1}
+    local slotCodes = {
+        dropsanity = {code="drops_on", mapping=nil},
+        shopsanity = {code="shops_on", mapping=nil},
+        switch_locks = {code="slocks", mapping=nil},
+        secret_door_lock = {code="sdoors", mapping=nil},
+    }
+
+    for settings_name , settings_value in pairs(SLOT_DATA) do
+        if slotCodes[settings_name] then
+            local item = Tracker:FindObjectForCode(slotCodes[settings_name].code)
+            if item.Type == "toggle" then
+                if slotCodes[settings_name].mapping == nil then
+                    item.Active = settings_value
+                else
+                    item.Active = slotCodes[settings_name].mapping[settings_value]
+                end
+            elseif item.Type == "progressive" then
+                print(settings_value, type(settings_value))
+                if slotCodes[settings_name].mapping == nil then
+                    item.CurrentStage = settings_value
+                else
+                    item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+                end
+            elseif slotCodes[settings_name].mapping == nil then
+                item.AcquiredCount = settings_value
+            else
+                item.CurrentStage = slotCodes[settings_name].mapping[settings_value]
+            end
+        end
+    end
+
+    if SLOT_DATA["random_elements"] then
+        UpdateElements(SLOT_DATA["elements"])
+    end
+end
