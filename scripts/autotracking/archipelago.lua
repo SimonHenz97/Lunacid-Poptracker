@@ -113,13 +113,12 @@ function onItem(index, item_id, item_name, player_number)
    
     local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index;
-    CheckForElement(item_id)
-    print("after check")
+    CheckForItem(item_id)
     local v = nil
-    if not ITEM_MAPPING[item_id] == nil then
+    if ITEM_MAPPING[item_id] then
         v = ITEM_MAPPING[item_id]
     end
-    if not v == nil then
+    if v then
         local items = v[1]
         local item_type = v[2]
         if not v then
@@ -179,6 +178,7 @@ end
 -- called when a location gets cleared
 function onLocation(location_id, location_name)
     local location_array = LOCATION_MAPPING[location_id]
+    print(location_id, location_name)
     if not location_array or not location_array[1] then
         print(string.format("onLocation: could not find location mapping for id %s", location_id))
         return

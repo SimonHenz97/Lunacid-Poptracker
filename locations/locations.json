@@ -336,7 +336,7 @@
                      "chest_unopened_img": "images/items/check_misc_fade.png",
                      "chest_opened_img": "images/items/check_misc.png",
                      "access_rules": [
-                         "ekey_1, ele_light, ranged_attacks"
+                         "ekey_1, ranged_attacks, vhs_tape_1"
                      ],
                      "sections": [
                         { 
@@ -825,7 +825,25 @@
                         "chest_unopened_img": "images/items/check_weapon_fade.png",
                         "chest_opened_img": "images/items/check_weapon.png",
                         "item_count": 1
-                    }
+                    },
+                    {
+                        "name": "Privateer Musket",
+                        "chest_unopened_img": "images/items/check_weapon_fade.png",
+                        "chest_opened_img": "images/items/check_weapon.png",
+                        "item_count": 1,
+                        "access_rules": [
+                           ["ekey_1", "vamp_azure", "ele_fire"]
+                        ]
+                    },
+                    {
+                     "name": "Jutuun Slayer",
+                     "chest_unopened_img": "images/items/check_weapon_fade.png",
+                     "chest_opened_img": "images/items/check_weapon.png",
+                     "item_count": 1,
+                     "access_rules": [
+                        ["ekey_1", "vamp_emerald", "term_key", "w_talis", "e_talis"]
+                     ]
+                 }
                 ],
                 "map_locations": [
                     {
@@ -845,7 +863,8 @@
                 "chest_unopened_img": "images/items/check_item_fade.png",
                 "chest_opened_img": "images/items/check_item.png",
                 "access_rules": [
-                    "dsf_checks"
+                    "dsf_checks",
+                    "hdex_jumps"
                 ],
                 "sections": [
                     {
@@ -938,7 +957,8 @@
     {
       "name": "Forbidden Archives",
       "access_rules": [
-         "dsf_checks"
+         "dsf_checks",
+         "hdex_jumps"
       ],
       "children": [
             {
@@ -1754,12 +1774,9 @@
                   ]
                },
                {
-                  "name": "AT: Catacombs Hidden Room",
+                  "name": "AT: Gated Tomb Near Corrupted Room",
                   "chest_unopened_img": "images/items/check_item_fade.png",
                   "chest_opened_img": "images/items/check_item.png",
-                  "access_rules": [
-                      "ele_light"
-                  ],
                   "sections": [
                      { 
                         "name": "Ocean Elixir",
@@ -1784,6 +1801,9 @@
                         "item_count": 1
                      }
                   ],
+                  "access_rules": [
+                      "ckey"
+                  ],
                   "map_locations": [
                      { 
                         "map": "Accursed Tomb",
@@ -1793,7 +1813,7 @@
                   ]
                },
                {
-                  "name": "AT: Gated Tomb Near Corrupted Room",
+                  "name": "AT: Catacombs Hidden Room",
                   "chest_unopened_img": "images/items/check_item_fade.png",
                   "chest_opened_img": "images/items/check_item.png",
                   "sections": [
@@ -2278,7 +2298,7 @@
                   ]
                },
                {
-                  "name": "AT: Gated Tomb Near Corrupted Room",
+                  "name": "AT: Catacombs Hidden Room",
                   "chest_unopened_img": "images/items/check_item_fade.png",
                   "chest_opened_img": "images/items/check_item.png",
                   "sections": [
@@ -2604,24 +2624,6 @@
             ],
             "children": [
                {
-                  "name": "SS: Lake Demon",
-                  "chest_unopened_img": "images/items/check_item_fade.png",
-                  "chest_opened_img": "images/items/check_item.png",
-                  "sections": [
-                     { 
-                        "name": "Ocean Elixir",
-                        "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
-                     { 
-                        "map": "The Sanguine Sea",
-                        "x": 148,
-                        "y": 1070
-                     }
-                  ]
-               },
-               {
                   "name": "SS: Pillar In Front of Castle Le Fanu",
                   "chest_unopened_img": "images/items/check_weapon_fade.png",
                   "chest_opened_img": "images/items/check_weapon.png",
@@ -2711,29 +2713,12 @@
             ],
             "children": [
                {
-                  "name": "SS: Lake Demon",
-                  "chest_unopened_img": "images/items/check_item_fade.png",
-                  "chest_opened_img": "images/items/check_item.png",
-                  "sections": [
-                     { 
-                        "name": "Ocean Elixir",
-                        "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
-                     { 
-                        "map": "The Sanguine Sea",
-                        "x": 148,
-                        "y": 1070
-                     }
-                  ]
-               },
-               {
                   "name": "SS: Pillar In Front of Castle Le Fanu",
                   "chest_unopened_img": "images/items/check_weapon_fade.png",
                   "chest_opened_img": "images/items/check_weapon.png",
                   "access_rules": [
-                      "dsf_checks"
+                      "dsf_checks",
+                      "slayer"
                   ],
                   "sections": [
                      { 
@@ -6149,7 +6134,7 @@
                   ]
                },
                {
-                  "name": "TP: First Floor Hidden Cell",
+                  "name": "TP: First Floor Debris Room",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
@@ -6203,7 +6188,7 @@
                   ]
                },
                {
-                  "name": "TP: Second Basement Guarded Alcove (Right)",
+                  "name": "TP: Egg's Resting Place",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
@@ -6544,7 +6529,7 @@
                   ]
                },
                {
-                  "name": "TP: First Floor Hidden Cell",
+                  "name": "TP: First Floor Debris Room",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
@@ -6598,7 +6583,7 @@
                   ]
                },
                {
-                  "name": "TP: Second Basement Guarded Alcove (Right)",
+                  "name": "TP: Egg's Resting Place",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
@@ -6969,30 +6954,16 @@
                   ]
                },
                {
-                  "name": "FlA: Temple of Water Hidden Basement (Left)",
+                  "name": "FlA: Temple of Water Hidden Basement",
                   "chest_unopened_img": "images/items/check_item_fade.png",
                   "chest_opened_img": "images/items/check_item.png",
                   "sections": [
                      { 
-                        "name": "Antidote",
+                        "name": "Left Antidote",
                         "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
+                     },
                      { 
-                        "map": "Forlorn Arena",
-                        "x": 817,
-                        "y": 303
-                     }
-                  ]
-               },
-               {
-                  "name": "FlA: Temple of Water Hidden Basement (Right)",
-                  "chest_unopened_img": "images/items/check_item_fade.png",
-                  "chest_opened_img": "images/items/check_item.png",
-                  "sections": [
-                     { 
-                        "name": "Antidote",
+                        "name": "Right Antidote",
                         "item_count": 1
                      }
                   ],
@@ -7041,30 +7012,16 @@
                   ]
                },
                {
-                  "name": "FlA: Temple of Water Hidden Alcove (Left)",
+                  "name": "FlA: Temple of Water Hidden Alcove",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
                      { 
-                        "name": "Wisp Heart",
+                        "name": "Left Wisp Heart",
                         "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
+                     },
                      { 
-                        "map": "Forlorn Arena",
-                        "x": 231,
-                        "y": 510
-                     }
-                  ]
-               },
-               {
-                  "name": "FlA: Temple of Water Hidden Alcove (Right)",
-                  "chest_unopened_img": "images/items/check_misc_fade.png",
-                  "chest_opened_img": "images/items/check_misc.png",
-                  "sections": [
-                     { 
-                        "name": "Wisp Heart",
+                        "name": "Right Wisp Heart",
                         "item_count": 1
                      }
                   ],
@@ -7304,30 +7261,16 @@
                   ]
                },
                {
-                  "name": "FlA: Temple of Water Hidden Basement (Left)",
+                  "name": "FlA: Temple of Water Hidden Basement",
                   "chest_unopened_img": "images/items/check_item_fade.png",
                   "chest_opened_img": "images/items/check_item.png",
                   "sections": [
                      { 
-                        "name": "Antidote",
+                        "name": "Left Antidote",
                         "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
+                     },
                      { 
-                        "map": "Forlorn Arena",
-                        "x": 817,
-                        "y": 303
-                     }
-                  ]
-               },
-               {
-                  "name": "FlA: Temple of Water Hidden Basement (Right)",
-                  "chest_unopened_img": "images/items/check_item_fade.png",
-                  "chest_opened_img": "images/items/check_item.png",
-                  "sections": [
-                     { 
-                        "name": "Antidote",
+                        "name": "Right Antidote",
                         "item_count": 1
                      }
                   ],
@@ -7376,30 +7319,16 @@
                   ]
                },
                {
-                  "name": "FlA: Temple of Water Hidden Alcove (Left)",
+                  "name": "FlA: Temple of Water Hidden Alcove",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
                   "sections": [
                      { 
-                        "name": "Wisp Heart",
+                        "name": "Left Wisp Heart",
                         "item_count": 1
-                     }
-                  ],
-                  "map_locations": [
+                     },
                      { 
-                        "map": "Forlorn Arena",
-                        "x": 231,
-                        "y": 510
-                     }
-                  ]
-               },
-               {
-                  "name": "FlA: Temple of Water Hidden Alcove (Right)",
-                  "chest_unopened_img": "images/items/check_misc_fade.png",
-                  "chest_opened_img": "images/items/check_misc.png",
-                  "sections": [
-                     { 
-                        "name": "Wisp Heart",
+                        "name": "Right Wisp Heart",
                         "item_count": 1
                      }
                   ],

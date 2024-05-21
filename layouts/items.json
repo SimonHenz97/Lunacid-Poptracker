@@ -14,9 +14,9 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["vamp_symbol", "bb", "ekey", "term_key", "scoins"],
-                            ["jo_skull", "vhs_tape_1", "vhs_tape_2", "w_talis", "e_talis"],
-                            ["slayer"]
+                            ["vamp_symbol", "bb", "ekey", "term_key", "ckey"],
+                            ["scoins", "vhs_tape_1", "vhs_tape_2", "w_talis", "e_talis"],
+                            ["jo_skull", "slayer"]
                         ]
                     }
                 ]

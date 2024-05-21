@@ -23,11 +23,11 @@ ITEM_MAPPING = {
     --[771111129] = {"Staff of Osiris", "consumable"},
     [771111130] = {{"vhs_tape_2"}, "toggle"},
     [771111131] = {{"vhs_tape_1"}, "toggle"},
-    --[771111132] = {"Corrupt Key", "toggle"},
+    [771111132] = {{"ckey"}, "toggle"},
     [771111133] = {{"jo_skull"}, "toggle"},
     [771111134] = {{"vamp_symbol"}, "progressive"},
     --[771111137] = {"Crystal Lantern", "toggle"},
-    --[771111138] = {"Terminus Prison Key", "toggle"},
+    [771111138] = {{"term_key"}, "toggle"},
     [771111139] = {{"ekey"}, "progressive"},
     --[771111140] = {"Survey Banner", "consumable"},
     --[771111141] = {"Ectoplasm", "consumable"},
@@ -218,108 +218,109 @@ local ELEMENT <const> = {
     dark = "Dark",
     poison = "Poison",
     ice = "Ice",
-    darkfire = "Dark and Fire",
-    darklight = "Dark and Light",
     normal = "Normal",
     ignore = "IGNORE",
-    melee = "Melee", -- the best element
+    melee = "Melee",
 }
 
 IMPORTANT_ITEMS = {
-    [771111272] = {name="Blood Drain", element=ELEMENT.blood},
-    [771111273] = {name="Blood Strike", element=ELEMENT.blood},
-    [771111274] = {name="Blue Flame Arc", element=ELEMENT.fire},
-    [771111277] = {name="Earth Strike", element=ELEMENT.normal},
-    [771111278] = {name="Earth Thorn", element=ELEMENT.normal},
-    [771111279] = {name="Fire Worm", element=ELEMENT.fire},
-    [771111280] = {name="Flame Flare", element=ELEMENT.fire},
-    [771111281] = {name="Flame Spear", element=ELEMENT.fire},
-    [771111302] = {name="Dark Skull", element=ELEMENT.dark},
-    [771111303] = {name="Dark Rapier", element=ELEMENT.dark},
-    [771111304] = {name="Dark Greatsword", element=ELEMENT.dark},
-    [771111285] = {name="Ice Spear", element=ELEMENT.ice},
-    [771111286] = {name="Ice Tear", element=ELEMENT.ice},
-    [771111287] = {name="Ignis Calor", element=ELEMENT.fire},
-    [771111288] = {name="Lava Chasm", element=ELEMENT.fire},
-    [771111289] = {name="Light Reveal", element=ELEMENT.light},
-    [771111290] = {name="Lightning", element=ELEMENT.light},
-    [771111292] = {name="Moon Beam", element=ELEMENT.light},
-    [771111293] = {name="Poison Mist", element=ELEMENT.poison},
-    [771111295] = {name="Slime Orb", element=ELEMENT.poison},
-    [771111297] = {name="Summon Fairy", element=ELEMENT.light},
-    [771111298] = {name="Summon Ice Sword", element=ELEMENT.ice},
-    [771111300] = {name="Wind Slicer", element=ELEMENT.normal},
-    [771111301] = {name="Summon Snail", element=ELEMENT.normal},
-    [771111307] = {name="Summon Kodama", element=ELEMENT.normal},
-    [771111308] = {name="Tornado", element=ELEMENT.normal},
-    [771111310] = {name="Jingle Bells", element=ELEMENT.normal}, -- only on December 25th relevant
+    [771111272] = {name="Blood Drain", element=ELEMENT.blood, ranged=true},
+    [771111273] = {name="Blood Strike", element=ELEMENT.blood, ranged=true},
+    [771111274] = {name="Blue Flame Arc", element=ELEMENT.fire, ranged=false},
+    [771111277] = {name="Earth Strike", element=ELEMENT.normal, ranged=true},
+    [771111278] = {name="Earth Thorn", element=ELEMENT.normal, ranged=true},
+    [771111279] = {name="Fire Worm", element=ELEMENT.fire, ranged=true},
+    [771111280] = {name="Flame Flare", element=ELEMENT.fire, ranged=true},
+    [771111281] = {name="Flame Spear", element=ELEMENT.fire, ranged=true},
+    [771111302] = {name="Dark Skull", element=ELEMENT.dark, ranged=true},
+    [771111285] = {name="Ice Spear", element=ELEMENT.ice, ranged=true},
+    [771111286] = {name="Ice Tear", element=ELEMENT.ice, ranged=false},
+    [771111287] = {name="Ignis Calor", element=ELEMENT.fire, ranged=false},
+    [771111288] = {name="Lava Chasm", element=ELEMENT.fire, ranged=false},
+    [771111289] = {name="Light Reveal", element=ELEMENT.light, ranged=false},
+    [771111290] = {name="Lightning", element=ELEMENT.light, ranged=true},
+    [771111292] = {name="Moon Beam", element=ELEMENT.light, ranged=true},
+    [771111293] = {name="Poison Mist", element=ELEMENT.poison, ranged=false},
+    [771111295] = {name="Slime Orb", element=ELEMENT.poison, ranged=true},
+    [771111297] = {name="Summon Fairy", element=ELEMENT.light, ranged=false},
+    [771111298] = {name="Summon Ice Sword", element=ELEMENT.ice, ranged=false},
+    [771111300] = {name="Wind Slicer", element=ELEMENT.normal, ranged=true},
+    [771111301] = {name="Summon Snail", element=ELEMENT.normal, ranged=false},
+    [771111307] = {name="Summon Kodama", element=ELEMENT.normal, ranged=false},
+    [771111304] = {name="Tornado", element=ELEMENT.normal, ranged=true},
+    [771111310] = {name="Jingle Bells", element=ELEMENT.normal, ranged=false}, -- only relevant on December 25th 
+    [771111284] = {name="Icarian Flight", element=ELEMENT.normal, ranged=false},
+    [771111275] = {name="Coffin", element=ELEMENT.normal, ranged=false},
+    [771111294] = {name="Rock Bridge", element=ELEMENT.normal, ranged=false},
 
-    [771111190] = {name="Axe of Harming", element=ELEMENT.poison},
-    [771111191] = {name="Battle Axe", element=ELEMENT.normal},
-    [771111192] = {name="Blade of Jusztina", element=ELEMENT.dark},
-    [771111193] = {name="Blade of Ophelia", element=ELEMENT.normal},
-    [771111194] = {name="Blessed Wind", element=ELEMENT.normal},
-    [771111195] = {name="Broken Hilt", element=ELEMENT.normal},
-    [771111196] = {name="Broken Lance", element=ELEMENT.normal},
-    [771111197] = {name="Corrupted Dagger", element=ELEMENT.dark},
-    [771111198] = {name="Dark Rapier", element=ELEMENT.dark},
-    [771111199] = {name="Elfen Bow", element=ELEMENT.normal},
-    [771111200] = {name="Elfen Sword", element=ELEMENT.normal},
-    [771111201] = {name="Fishing Spear", element=ELEMENT.normal},
-    [771111202] = {name="Marauder Black Flail", element=ELEMENT.normal},
-    [771111203] = {name="Halberd", element=ELEMENT.normal},
-    [771111204] = {name="Iron Claw", element=ELEMENT.normal},
-    [771111205] = {name="Moonlight", element=ELEMENT.light},
-    [771111206] = {name="Obsidian Seal", element=ELEMENT.dark},
-    [771111207] = {name="Replica Sword", element=ELEMENT.normal},
-    [771111208] = {name="Ritual Dagger", element=ELEMENT.poison},
-    [771111209] = {name="Serpent Fang", element=ELEMENT.dark},
-    [771111210] = {name="Shadow Blade", element=ELEMENT.dark},
-    [771111211] = {name="Steel Spear", element=ELEMENT.normal},
-    [771111212] = {name="Stone Club", element=ELEMENT.normal},
-    [771111213] = {name="Torch", element=ELEMENT.fire},
-    [771111214] = {name="Twisted Staff", element=ELEMENT.fire},
-    [771111215] = {name="Vampire Hunter Sword", element=ELEMENT.light},
-    [771111216] = {name="Wand of Power", element=ELEMENT.ignore},
-    [771111217] = {name="Wolfram Greatsword", element=ELEMENT.normal},
-    [771111218] = {name="Wooden Shield", element=ELEMENT.normal},
-    [771111219] = {name="Crossbow", element=ELEMENT.normal},
-    [771111220] = {name="Steel Needle", element=ELEMENT.normal},
-    [771111221] = {name="Lucid Blade", element=ELEMENT.light},
-    [771111222] = {name="Hammer of Cruelty", element=ELEMENT.darklight},
-    [771111223] = {name="Jotunn Slayer", element=ELEMENT.darkfire},
-    [771111224] = {name="Rapier", element=ELEMENT.normal},
-    [771111225] = {name="Privateer Musket", element=ELEMENT.dark},
-    [771111226] = {name="Rusted Sword", element=ELEMENT.normal},
-    [771111227] = {name="Ice Sickle", element=ELEMENT.ice},
-    [771111228] = {name="Skeleton Axe", element=ELEMENT.normal},
-    [771111229] = {name="Cursed Blade", element=ELEMENT.normal},
-    [771111230] = {name="Brittle Arming Sword", element=ELEMENT.normal},
-    [771111231] = {name="Obsidian Cursebrand", element=ELEMENT.dark},
-    [771111232] = {name="Obsidian Poisonguard", element=ELEMENT.dark},
-    [771111233] = {name="Golden Kopesh", element=ELEMENT.normal},
-    [771111234] = {name="Golden Sickle", element=ELEMENT.normal},
-    [771111235] = {name="Jailor's Candle", element=ELEMENT.fire},
-    [771111236] = {name="Sucsarian Dagger", element=ELEMENT.dark},
-    [771111237] = {name="Sucsarian Spear", element=ELEMENT.dark},
-    [771111238] = {name="Lyrian Longsword", element=ELEMENT.normal},
-    [771111239] = {name="Lyrian Greatsword", element=ELEMENT.normal},
-    [771111240] = {name="Dark Greatsword", element=ELEMENT.dark},
-    [771111241] = {name="Shining Blade", element=ELEMENT.light},
-    [771111242] = {name="Poison Claw", element=ELEMENT.poison},
-    [771111243] = {name="Iron Club", element=ELEMENT.normal},
-    [771111244] = {name="Iron Torch", element=ELEMENT.fire},
-    [771111245] = {name="Fire Sword", element=ELEMENT.fire},
-    [771111246] = {name="Steel Lance", element=ELEMENT.normal},
-    [771111247] = {name="Double Crossbow", element=ELEMENT.normal},
-    [771111248] = {name="Death Scythe", element=ELEMENT.darklight},
-    [771111249] = {name="Elfen Longsword", element=ELEMENT.normal},
-    [771111250] = {name="Flail", element=ELEMENT.normal},
-    [771111251] = {name="Steel Claw", element=ELEMENT.normal},
-    [771111252] = {name="Steel Club", element=ELEMENT.normal},
-    [771111253] = {name="Saint Ishii", element=ELEMENT.darkfire},
-    [771111254] = {name="Silver Rapier", element=ELEMENT.light},
-    [771111255] = {name="Heritage Sword", element=ELEMENT.normal},
+    [771111303] = {name="Dark Rapier", element=ELEMENT.dark, ranged=false},
+    -- [771111304] = {name="Dark Greatsword", element=ELEMENT.dark, ranged=false},
+    [771111190] = {name="Axe of Harming", element=ELEMENT.poison, ranged=false},
+    [771111191] = {name="Battle Axe", element=ELEMENT.normal, ranged=false},
+    [771111192] = {name="Blade of Jusztina", element=ELEMENT.dark, ranged=false},
+    [771111193] = {name="Blade of Ophelia", element=ELEMENT.normal, ranged=false},
+    [771111194] = {name="Blessed Wind", element=ELEMENT.normal, ranged=false},
+    [771111195] = {name="Broken Hilt", element=ELEMENT.normal, ranged=false},
+    [771111196] = {name="Broken Lance", element=ELEMENT.normal, ranged=false},
+    [771111197] = {name="Corrupted Dagger", element=ELEMENT.dark, ranged=false},
+    [771111198] = {name="Dark Rapier", element=ELEMENT.dark, ranged=false},
+    [771111199] = {name="Elfen Bow", element=ELEMENT.normal, ranged=true},
+    [771111200] = {name="Elfen Sword", element=ELEMENT.normal, ranged=false},
+    [771111201] = {name="Fishing Spear", element=ELEMENT.normal, ranged=false},
+    [771111202] = {name="Marauder Black Flail", element=ELEMENT.normal, ranged=false},
+    [771111203] = {name="Halberd", element=ELEMENT.normal, ranged=false},
+    [771111204] = {name="Iron Claw", element=ELEMENT.normal, ranged=false},
+    [771111205] = {name="Moonlight", element=ELEMENT.light, ranged=true},
+    [771111206] = {name="Obsidian Seal", element=ELEMENT.dark, ranged=false},
+    [771111207] = {name="Replica Sword", element=ELEMENT.normal, ranged=false},
+    [771111208] = {name="Ritual Dagger", element=ELEMENT.poison, ranged=false},
+    [771111209] = {name="Serpent Fang", element=ELEMENT.dark, ranged=false},
+    [771111210] = {name="Shadow Blade", element=ELEMENT.dark, ranged=false},
+    [771111211] = {name="Steel Spear", element=ELEMENT.normal, ranged=false},
+    [771111212] = {name="Stone Club", element=ELEMENT.normal, ranged=false},
+    [771111213] = {name="Torch", element=ELEMENT.fire, ranged=false},
+    [771111214] = {name="Twisted Staff", element=ELEMENT.fire, ranged=true},
+    [771111215] = {name="Vampire Hunter Sword", element=ELEMENT.light, ranged=false},
+    [771111216] = {name="Wand of Power", element=ELEMENT.ignore, ranged=true},
+    [771111217] = {name="Wolfram Greatsword", element=ELEMENT.normal, ranged=false},
+    [771111218] = {name="Wooden Shield", element=ELEMENT.normal, ranged=false},
+    [771111219] = {name="Crossbow", element=ELEMENT.normal, ranged=true},
+    [771111220] = {name="Steel Needle", element=ELEMENT.normal, ranged=false},
+    [771111221] = {name="Lucid Blade", element=ELEMENT.light, ranged=true},
+    [771111222] = {name="Hammer of Cruelty", element=ELEMENT.darklight, ranged=false},
+    [771111223] = {name="Jotunn Slayer", element=ELEMENT.darkfire, ranged=false},
+    [771111224] = {name="Rapier", element=ELEMENT.normal, ranged=false},
+    [771111225] = {name="Privateer Musket", element=ELEMENT.normal, ranged=true},
+    [771111226] = {name="Rusted Sword", element=ELEMENT.normal, ranged=false},
+    [771111227] = {name="Ice Sickle", element=ELEMENT.ice, ranged=false},
+    [771111228] = {name="Skeleton Axe", element=ELEMENT.normal, ranged=false},
+    [771111229] = {name="Cursed Blade", element=ELEMENT.normal, ranged=false},
+    [771111230] = {name="Brittle Arming Sword", element=ELEMENT.normal, ranged=false},
+    [771111231] = {name="Obsidian Cursebrand", element=ELEMENT.dark, ranged=false},
+    [771111232] = {name="Obsidian Poisonguard", element=ELEMENT.dark, ranged=false},
+    [771111233] = {name="Golden Kopesh", element=ELEMENT.normal, ranged=false},
+    [771111234] = {name="Golden Sickle", element=ELEMENT.normal, ranged=false},
+    [771111235] = {name="Jailor's Candle", element=ELEMENT.fire, ranged=true},
+    [771111236] = {name="Sucsarian Dagger", element=ELEMENT.dark, ranged=false},
+    [771111237] = {name="Sucsarian Spear", element=ELEMENT.dark, ranged=false},
+    [771111238] = {name="Lyrian Longsword", element=ELEMENT.normal, ranged=false},
+    [771111239] = {name="Lyrian Greatsword", element=ELEMENT.normal, ranged=false},
+    [771111240] = {name="Dark Greatsword", element=ELEMENT.dark, ranged=false},
+    [771111241] = {name="Shining Blade", element=ELEMENT.light, ranged=false},
+    [771111242] = {name="Poison Claw", element=ELEMENT.poison, ranged=false},
+    [771111243] = {name="Iron Club", element=ELEMENT.normal, ranged=false},
+    [771111244] = {name="Iron Torch", element=ELEMENT.fire, ranged=false},
+    [771111245] = {name="Fire Sword", element=ELEMENT.fire, ranged=false},
+    [771111246] = {name="Steel Lance", element=ELEMENT.normal, ranged=false},
+    [771111247] = {name="Double Crossbow", element=ELEMENT.normal, ranged=true},
+    [771111248] = {name="Death Scythe", element=ELEMENT.darklight, ranged=false},
+    [771111249] = {name="Elfen Longsword", element=ELEMENT.normal, ranged=true},
+    [771111250] = {name="Flail", element=ELEMENT.normal, ranged=false},
+    [771111251] = {name="Steel Claw", element=ELEMENT.normal, ranged=false},
+    [771111252] = {name="Steel Club", element=ELEMENT.normal, ranged=false},
+    [771111253] = {name="Saint Ishii", element=ELEMENT.darkfire, ranged=false},
+    [771111254] = {name="Silver Rapier", element=ELEMENT.light, ranged=false},
+    [771111255] = {name="Heritage Sword", element=ELEMENT.normal, ranged=false},
 }
 
 function UpdateElements(updates)
@@ -328,6 +329,38 @@ function UpdateElements(updates)
             item.element = updates[item.name]
         end
     end
+end
+
+local function getElements(input)
+    local elements = {}
+
+    local element1, element2 = input:match("^(%a+) and (%a+)$")
+    if element1 and element2 then
+        table.insert(elements, ELEMENT[element1:lower()])
+        table.insert(elements, ELEMENT[element2:lower()])
+    else
+        local element = input:match("^(%a+)$")
+        if element then
+            table.insert(elements, ELEMENT[element:lower()])
+        end
+    end
+
+    function elements:for_each(action)
+        for _, element in ipairs(self) do
+            action(element)
+        end
+    end
+
+    function elements:contains(this)
+        for _, element in ipairs(self) do
+            if element == this then
+                return true
+            end
+        end
+        return false
+    end
+
+    return elements
 end
 
 ElementAction = {
@@ -346,13 +379,11 @@ ElementAction = {
     [ELEMENT.poison] = function()
         Tracker:FindObjectForCode("ele_poison").Active = true
     end,
-    [ELEMENT.darkfire] = function()
-        Tracker:FindObjectForCode("ele_dark").Active = true
-        Tracker:FindObjectForCode("ele_fire").Active = true
+    [ELEMENT.ice] = function()
+        -- Tracker:FindObjectForCode("ele_ice").Active = true
     end,
-    [ELEMENT.darklight] = function()
-        Tracker:FindObjectForCode("ele_dark").Active = true
-        Tracker:FindObjectForCode("ele_light").Active = true
+    [ELEMENT.normal] = function()
+        -- Tracker:FindObjectForCode("ele_normal").Active = true
     end,
     ["wop"] = function()
         Tracker:FindObjectForCode("wop").Active = true
@@ -363,10 +394,31 @@ ElementAction = {
     end,
 }
 
-function CheckForElement(item_id)
-    if IMPORTANT_ITEMS[item_id].name == "Wand of Power" then
-        ElementAction["wop"]()
-    else
-        ElementAction[IMPORTANT_ITEMS[item_id].element]()
+function CheckForItem(item_id)
+    if IMPORTANT_ITEMS[item_id] then
+        print(item_id, IMPORTANT_ITEMS[item_id].name, IMPORTANT_ITEMS[item_id].element, IMPORTANT_ITEMS[item_id].ranged)
+        local item = IMPORTANT_ITEMS[item_id]
+        if item.name == "Wand of Power" then
+            ElementAction["wop"]()
+            Tracker:FindObjectForCode("ranged_attacks").Active = true
+        elseif item.name == "Icarian Flight" or item.name == "Coffin" then
+            Tracker:FindObjectForCode("dsf_checks").Active = true
+            Tracker:FindObjectForCode("hdex_jumps").Active = true
+            Tracker:FindObjectForCode("summon_jumps").Active = true
+        elseif item.name == "Rock Bridge" then
+            Tracker:FindObjectForCode("hdex_jumps").Active = true
+            Tracker:FindObjectForCode("summon_jumps").Active = true
+        elseif item.name == "Summon Snail" or item.name == "Summon Koadama" then
+            Tracker:FindObjectForCode("summon_jumps").Active = true
+        elseif item.name == "Blood Strike" or item.name == "Blood Drain" then
+            ElementAction[ELEMENT.blood]()
+        else
+            local elements = getElements(item.element)
+            print (item.ranged, elements[1], elements[2])
+            elements:for_each(function(element) ElementAction[element]() end)
+            if item.ranged == true and elements:contains(ELEMENT.dark) then
+                Tracker:FindObjectForCode("ranged_attacks").Active = true
+            end
+        end
     end
 end

@@ -63,6 +63,12 @@
         ]
     },
     {
+        "name": "Corrupted Key",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "ckey"
+    },
+    {
         "name": "Blood Element",
         "type": "toggle",
         "img": "images/items/ele_blood.png",
