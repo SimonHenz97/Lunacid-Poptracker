@@ -6,7 +6,8 @@
     "author": "ScorpioGameKing",
     "variants": {
         "standard": {
-            "display_name": "Lunacid Map & Item Tracker"
+            "display_name": "Lunacid Map & Item Tracker",
+            "flags": ["ap"]
         }
     }
 }

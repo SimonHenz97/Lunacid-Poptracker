@@ -2,7 +2,7 @@
  The Lunacid poptracker pack for all your needs. Intended for use with the Lunacid Archipelago Randomizer.
 
  ## Requirements
-- [Poptracker Version 0.25.8+](https://github.com/black-sliver/PopTracker/releases)
+- [Poptracker Version 0.25.8+ / 0.26.1+ for AP Support](https://github.com/black-sliver/PopTracker/releases)
 - [Lunacid AP Randomizer](https://github.com/Witchybun/LunacidAPClient/releases)
 
 ## Install & Setup
@@ -50,9 +50,18 @@ Once implemented, to enable auto tracking click on the AP icon in the upper left
     - [x] Element Rando
     - [x] Switch Locks
     - [ ] Secret Door Lock
-- [ ] AP Auto Tracking
+- [ ] AP Auto Tracking completed
 
-The above list is will be subject to change as randomizer features are added/removed but will stand as the goal for what a 1.0.0 build will contain. 
+The above list is will be subject to change as randomizer features are added/removed but will stand as the goal for what a 1.0.0 build will contain.
+
+## AP Support Checklist
+- [x] AP Auto Tracking
+- [x] Item Tracking
+- [x] Element Tracking
+- [ ] All Locations
+- [ ] Switch Locks
+- [ ] Secret Door Lock
+
 
 ## Closing Thanks & Links
 I just want to make sure to thank Witchybun for making the LunacidAPClient, and Boreal for making the amazing maps and Guide I used to learn the game.
