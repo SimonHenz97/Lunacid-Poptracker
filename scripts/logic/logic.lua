@@ -13,3 +13,11 @@ function has_more_then_n_consumable(n)
     end
     return 0 -- 0 => no access
 end
+
+function secrets_or_off()
+    local secret_toggle = Tracker:ProviderCountForCode('sdoors')
+    local doc_obtained = Tracker:ProviderCountForCode('dc_orb')
+    if ENABLE_DEBUG_LOG then
+        print(string.format("sdoors is %s dc_orb is %s", secret_toggle, doc_obtained))
+    end
+end
