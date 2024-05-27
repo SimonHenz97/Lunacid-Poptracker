@@ -15,9 +15,39 @@ function has_more_then_n_consumable(n)
 end
 
 function secrets_or_off()
-    local secret_toggle = Tracker:ProviderCountForCode('sdoors')
+    --> Checking Secret Door Logic
+    local secret_toggle = Tracker:ProviderCountForCode('secret_doors')
     local doc_obtained = Tracker:ProviderCountForCode('dc_orb')
     if ENABLE_DEBUG_LOG then
-        print(string.format("sdoors is %s dc_orb is %s", secret_toggle, doc_obtained))
+        print(string.format("secrets are %s dc_orb is %s", secret_toggle, doc_obtained))
+    end
+    if secret_toggle * doc_obtained == 1 then
+        print("Doors on and Orb Obtained")
+        return 1 --> You have both secret doors on and the Dusty Crystal Orb
+    elseif secret_toggle == 1 and doc_obtained == 0 then
+        print("Doors On and Missing Orb")
+        return 0 --> You have both secret doors on and don't have the Dusty Crystal Orb
+    else
+        print("Doors must be off")
+        return 1 --> Secret Doors must be off so return true
+    end
+end
+
+function switches_or_off(key)
+    --> Checking if Switch Locks Are Enabled
+    local switch_toggle = Tracker:ProviderCountForCode('switch_locks')
+    local key_needed = Tracker:ProviderCountForCode(key)
+    if ENABLE_DEBUG_LOG then
+        print(string.format("Switches are %s Needed Key is %s", switch_toggle, key_needed))
+    end
+    if switch_toggle * key_needed == 1 then
+        print("Switches on and Key Obtained")
+        return 1 --> You have both secret doors on and the Dusty Crystal Orb
+    elseif switch_toggle == 1 and key_needed == 0 then
+        print("Switches On and Missing Key")
+        return 0 --> You have both secret doors on and don't have the Dusty Crystal Orb
+    else
+        print("Switches must be off")
+        return 1 --> Secret Doors must be off so return true
     end
 end

@@ -282,5 +282,19 @@
                 "inherit_codes": false
             }
         ]
+    },
+    {
+        "name": "Secret Doors Toggle",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "secret_doors"
+    },
+    {
+        "name": "Switch Locks Toggle",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "switch_locks"
     }
 ]
