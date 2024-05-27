@@ -196,24 +196,79 @@
         "codes": "open_ballroom"
     },
     {
-        "name": "Temple of Silence Opened",
+        "name": "Temple of Silence Switch Key",
         "type": "toggle",
-        "codes": "tos_switch_opened"
+        "codes": "tos_switch_key"
     },
     {
-        "name": "Forlorn Arena Opened",
+        "name": "Hollow Basin Switch Key",
         "type": "toggle",
-        "codes": "arena_lock_opened"
+        "codes": "hb_switch_key"
     },
     {
-        "name": "North Boiler",
+        "name": "Fetid Mire Switch Key",
         "type": "toggle",
-        "codes": "boil_switch_1"
+        "codes": "fm_switch_key"
     },
     {
-        "name": "South Boiler",
+        "name": "Archives Shortcut Switch Key",
         "type": "toggle",
-        "codes": "boil_switch_2"
+        "codes": "fba_shortcut_switch_key"
+    },
+    {
+        "name": "Archives Elevator Keyring",
+        "type": "toggle",
+        "codes": "fba_elevator_keyring"
+    },
+    {
+        "name": "Accursed Tomb Switch Keyring",
+        "type": "toggle",
+        "codes": "at__switch_keyring:"
+    },
+    {
+        "name": "Prometheus Fire Switch Keyring",
+        "type": "toggle",
+        "codes": "at_fire_keyring"
+    },
+    {
+        "name": "Sealed Ballroom Switch Key",
+        "type": "toggle",
+        "codes": "sb_switch_key"
+    },
+    {
+        "name": "Grotto Fire Switch Keyring",
+        "type": "toggle",
+        "codes": "bg_fire_keyring"
+    },
+    {
+        "name": "Sand Temple Switch Keyring",
+        "type": "toggle",
+        "codes": "st_switch_keyring"
+    },
+    {
+        "name": "Terminus Prison Back Alley Switch Key",
+        "type": "toggle",
+        "codes": "tp_back_alley_switch_key"
+    },
+    {
+        "name": "Forlorn Arena Gate Switch Key",
+        "type": "toggle",
+        "codes": "tp_arena_switch_key"
+    },
+    {
+        "name": "Labyrinth of Ash Switch Key",
+        "type": "toggle",
+        "codes": "la_switch_key"
+    },
+    {
+        "name": "Temple of Water Switch Key",
+        "type": "toggle",
+        "codes": "tow_switch_key"
+    },
+    {
+        "name": "Temple of Earth Switch Key",
+        "type": "toggle",
+        "codes": "toe_switch_key"
     },
     {
         "name": "Major Skips",
@@ -246,42 +301,6 @@
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
         "codes": "shops_on"
-    },
-    {
-        "name": "Switch Locks Enabled",
-        "type": "progressive",
-        "allow_disabled": false,
-        "initial_stage_idx": 0,
-        "stages": [
-            {
-                "img": "images/items/setting_off.png",
-                "codes": "slocks, slocks_off",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/items/setting_on.png",
-                "codes": "slocks, slocks_on",
-                "inherit_codes": false
-            }
-        ]
-    },
-    {
-        "name": "Secret Doors Enabled",
-        "type": "progressive",
-        "allow_disabled": false,
-        "initial_stage_idx": 0,
-        "stages": [
-            {
-                "img": "images/items/setting_off.png",
-                "codes": "sdoors, sdoors_off",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/items/setting_on.png",
-                "codes": "sdoors, sdoors_on",
-                "inherit_codes": false
-            }
-        ]
     },
     {
         "name": "Secret Doors Toggle",
