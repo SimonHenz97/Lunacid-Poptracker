@@ -198,76 +198,104 @@
     {
         "name": "Temple of Silence Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "tos_switch_key"
     },
     {
         "name": "Hollow Basin Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "hb_switch_key"
     },
     {
         "name": "Fetid Mire Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "fm_switch_key"
     },
     {
         "name": "Archives Shortcut Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "fba_shortcut_switch_key"
     },
     {
         "name": "Archives Elevator Keyring",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "fba_elevator_keyring"
     },
     {
         "name": "Accursed Tomb Switch Keyring",
         "type": "toggle",
-        "codes": "at__switch_keyring:"
+        "codes": "at_switch_keyring:"
     },
     {
         "name": "Prometheus Fire Switch Keyring",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "at_fire_keyring"
     },
     {
         "name": "Sealed Ballroom Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "sb_switch_key"
     },
     {
         "name": "Grotto Fire Switch Keyring",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "bg_fire_keyring"
     },
     {
         "name": "Sand Temple Switch Keyring",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "st_switch_keyring"
     },
     {
         "name": "Terminus Prison Back Alley Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "tp_back_alley_switch_key"
     },
     {
         "name": "Forlorn Arena Gate Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "tp_arena_switch_key"
     },
     {
         "name": "Labyrinth of Ash Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "la_switch_key"
     },
     {
         "name": "Temple of Water Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "tow_switch_key"
     },
     {
         "name": "Temple of Earth Switch Key",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "toe_switch_key"
     },
     {

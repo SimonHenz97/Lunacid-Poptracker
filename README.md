@@ -27,18 +27,19 @@ _**RIGHT**_
 
 If you intend to use the Archipelago Randomizer then head over to the [installation guide](https://github.com/Witchybun/LunacidAPClient/blob/main/Documentation/Setup.md) to setup the mod and generate a seed. 
 
-Once implemented, to enable auto tracking click on the AP icon in the upper left area, enter the Archipelago host and port, the Player Name and finally a password if you need one. 
+To enable auto tracking click on the AP icon in the upper left area, enter the Archipelago host and port, the Player Name and finally a password if you need one. 
 
 ## Current and Planned Features
 
 - [x] Map Tracker
     - [x] Maps
     - [x] Locations
-    - [x] Sphere 1 Logic
-    - [x] Sphere 2 Logic
-    - [x] Sphere 3 Logic
-    - [x] Sphere 4 Logic
-    - [x] Sphere 5 Logic
+    - [x] Per Map Logic
+    - [ ] Sphere 1 Logic
+    - [ ] Sphere 2 Logic
+    - [ ] Sphere 3 Logic
+    - [ ] Sphere 4 Logic
+    - [ ] Sphere 5 Logic
 - [x] Item Tracker
     - [x] Progression Items
     - [x] Quest Items
@@ -49,7 +50,8 @@ Once implemented, to enable auto tracking click on the AP icon in the upper left
     - [x] Dropsanity
     - [x] Element Rando
     - [x] Switch Locks
-    - [ ] Secret Door Lock
+    - [X] Secret Door Lock
+    - [ ] Entrance Rando
 - [ ] AP Auto Tracking completed
 
 The above list is will be subject to change as randomizer features are added/removed but will stand as the goal for what a 1.0.0 build will contain.

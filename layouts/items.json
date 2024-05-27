@@ -61,7 +61,7 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["ranged_attacks", "hdex_jumps", "summon_jumps", "dsf_checks", "major_skips"]
+                            ["ranged_attacks", "dsf_checks"]
                         ]
                     }
                 ]
@@ -83,7 +83,31 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["drops_on", "shops_on", "slocks", "sdoors", "secret_doors", "switch_locks"]
+                            ["drops_on", "shops_on", "secret_doors", "switch_locks"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "switch_key_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "10, 10",
+                        "h_alignment": "left",
+                        "rows": [
+                            ["tos_switch_key", "hb_switch_key", "fm_switch_key", "fba_shortcut_switch_key", " fba_elevator_keyring"],
+                            ["at_switch_keyring", "at_fire_keyring", "sb_switch_key", "bg_fire_keyring", "st_switch_keyring"],
+                            ["tp_back_alley_switch_key", "tp_arena_switch_key", "la_switch_key", "tow_switch_key", "toe_switch_key"]
                         ]
                     }
                 ]
