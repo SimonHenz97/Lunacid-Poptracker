@@ -41,7 +41,7 @@ function switches_or_off(key)
 end
 
 function entrances_or_off(access)
-    --> Checking if Switch Locks Are Enabled
+    --> Checking if Entrance Rando is Enabled
     local entrance_toggle = Tracker:ProviderCountForCode('entrance_toggle')
     local key_needed = Tracker:ProviderCountForCode(access)
     if entrance_toggle * key_needed == 1 then
