@@ -55,6 +55,15 @@
                                 "type": "layout",
                                 "key": "switch_key_grid"
                             }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Map Access",
+                            "dock": "top",
+                            "content": {
+                                "type": "layout",
+                                "key": "map_access_grid"
+                            }
                         }
                     ]
                 },
@@ -336,6 +345,16 @@
                             "content": {
                                 "type": "layout",
                                 "key": "switch_key_grid"
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Map Access",
+                            "dock": "top",
+                            "margin": "0,0,3,0",
+                            "content": {
+                                "type": "layout",
+                                "key": "map_access_grid"
                             }
                         }
                     ]

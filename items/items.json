@@ -233,6 +233,8 @@
     {
         "name": "Accursed Tomb Switch Keyring",
         "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
         "codes": "at_switch_keyring:"
     },
     {
@@ -297,6 +299,139 @@
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
         "codes": "toe_switch_key"
+    },
+    {
+        "name": "Forbidden Archives Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "fba_access"
+    },
+    {
+        "name": "Yosei Forest Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "yf_access"
+    },
+    {
+        "name": "Fetid Mire Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "fm_access"
+    },
+    {
+        "name": "Forest Canopy Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "fc_access"
+    },
+    {
+        "name": "Accursed Tomb Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "at_access"
+    },
+    {
+        "name": "Castle Le Fanu Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "clf_access"
+    },
+    {
+        "name": "Laetus Chasm Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "lc_access"
+    },
+    {
+        "name": "Great Well Surface Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "gws_access"
+    },
+    {
+        "name": "Sanguine Sea Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "ss_access"
+    },
+    {
+        "name": "Throne Room Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "tr_access"
+    },
+    {
+        "name": "Terminus Prison Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "tp_access"
+    },
+    {
+        "name": "Forlorn Arena Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "fa_access"
+    },
+    {
+        "name": "Boiling Grotto Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "bg_access"
+    },
+    {
+        "name": "Labyrinth of Ash Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "la_access"
+    },
+    {
+        "name": "Chamber of Fate Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "cof_access"
+    },
+    {
+        "name": "Grave of the Sleeper Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "gos_access"
+    },
+    {
+        "name": "Sealed Ballroom Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "sb_access"
+    },
+    {
+        "name": "Tower of Abyss Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "toa_access"
+    },
+    {
+        "name": "A Holy Battlefield Access",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "ahb_access"
     },
     {
         "name": "Major Skips",

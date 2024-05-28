@@ -105,9 +105,34 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["tos_switch_key", "hb_switch_key", "fm_switch_key", "fba_shortcut_switch_key", " fba_elevator_keyring"],
+                            ["tos_switch_key", "hb_switch_key", "fm_switch_key", "fba_shortcut_switch_key", "fba_elevator_keyring"],
                             ["at_switch_keyring", "at_fire_keyring", "sb_switch_key", "bg_fire_keyring", "st_switch_keyring"],
                             ["tp_back_alley_switch_key", "tp_arena_switch_key", "la_switch_key", "tow_switch_key", "toe_switch_key"]
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "map_access_grid": {
+        "type": "array",
+        "orientation": "vertical",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "array",
+                "orientation": "horizontal",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "itemgrid",
+                        "item_margin": "10, 10",
+                        "h_alignment": "left",
+                        "rows": [
+                            ["fba_access", "yf_access", "fm_access", "fc_access", "at_access"],
+                            ["clf_access", "lc_access", "gws_access", "ss_access", "tr_access"],
+                            ["tp_access", "fa_access", "bg_access", "la_access", "cof_access"],
+                            ["gos_access", "sb_access", "toa_access", "ahb_access"]
                         ]
                     }
                 ]
