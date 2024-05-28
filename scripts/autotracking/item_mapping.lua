@@ -6,7 +6,7 @@ ITEM_MAPPING = {
     --[771111112] = {"Mana Vial", "consumable"},
     --[771111113] = {"Antidote", "consumable"},
     --[771111114] = {"Blood Wine", "consumable"},
-    --[771111115] = {"Crystal Shard", "consumable"},
+    [771111115] = {"Crystal Shard", "consumable"},
     --[771111116] = {"Ocean Elixir", "consumable"},
     --[771111117] = {"Earth Elixir", "consumable"},
     --[771111118] = {"Poison Throwing Knife", "consumable"},
@@ -206,7 +206,7 @@ ITEM_MAPPING = {
     --[771111375] = {"Burning Hot Key", "toggle"},
     --[771111376] = {"Forbidden Door Key", "toggle"},
     --[771111377] = {"Sucsarian Key", "toggle"},
-    --[771111378] = {"Dreamer Key", "toggle"},
+    [771111378] = {"Dreamer Key", "toggle"},
     --[771111379] = {"Ballroom Side Rooms Keyring", "toggle"},
     --[771111380] = {"Tower of Abyss Keyring", "toggle"},
 }
