@@ -671,7 +671,7 @@
     {
       "name": "Great Well Surface",
       "access_rules":[
-         "gws_access"
+         "$entrances_or_off|gws_access"
       ],
       "children": [
             {
@@ -697,7 +697,7 @@
     {
       "name": "Laetus Chasm",
       "access_rules":[
-         "lc_access"
+         "$entrances_or_off|lc_access"
       ],
       "children": [
             {
@@ -747,7 +747,7 @@
     {
       "name": "Forbidden Archives",
       "access_rules":[
-         "fba_access"
+         "$entrances_or_off|fba_access"
       ],
       "children": [
             {
@@ -1205,7 +1205,7 @@
     {
       "name": "Yosei Forest",
       "access_rules":[
-         "yf_access"
+         "$entrances_or_off|yf_access"
       ],
       "children": [
                {
@@ -1402,7 +1402,7 @@
     {
       "name": "Accursed Tomb",
       "access_rules":[
-         "at_access"
+         "$entrances_or_off|at_access"
       ],
       "children": [
             {
@@ -2019,7 +2019,7 @@
     {
       "name": "The Sanguine Sea",
       "access_rules":[
-         "ss_access"
+         "$entrances_or_off|ss_access"
       ],
       "children": [
          {
@@ -2105,7 +2105,7 @@
     {
       "name": "The Fetid Mire",
       "access_rules":[
-         "fm_access"
+         "$entrances_or_off|fm_access"
       ],
       "children": [
          {
@@ -2442,7 +2442,7 @@
     {
       "name": "Castle Le Fanu",
       "access_rules":[
-         "clf_access"
+         "$entrances_or_off|clf_access"
       ],
       "children": [
             {
@@ -2811,7 +2811,7 @@
     {
       "name": "A Holy Battlefield",
       "access_rules":[
-         "ahb_access"
+         "$entrances_or_off|ahb_access"
       ],
       "children": [
          {
@@ -2837,7 +2837,7 @@
     {
       "name": "Forest Canopy",
       "access_rules":[
-         "fc_access"
+         "$entrances_or_off|fc_access"
       ],
       "children": [
          {
@@ -2935,7 +2935,7 @@
     {
       "name": "Sealed Ballroom",
       "access_rules": [
-         "open_ballroom, sb_access"
+         "$entrances_or_off|open_ballroom, sb_access"
       ],
       "children": [
          {
@@ -3159,7 +3159,7 @@
     {
       "name": "Boiling Grotto",
       "access_rules":[
-         "bg_access"
+         "$entrances_or_off|bg_access"
       ],
       "children": [ 
          {
@@ -3614,7 +3614,7 @@
     {
       "name": "Tower of Abyss",
       "access_rules":[
-         "toa_access"
+         "$entrances_or_off|toa_access"
       ],
       "children": [
          {
@@ -3820,7 +3820,7 @@
     {
       "name": "Throne Chamber",
       "access_rules":[
-         "tr_access"
+         "$entrances_or_off|tr_access"
       ],
       "children": [
          {
@@ -3846,7 +3846,7 @@
     {
       "name": "Terminus Prison",
       "access_rules":[
-         "tp_access"
+         "$entrances_or_off|tp_access"
       ],
       "children": [
          {
@@ -4290,7 +4290,7 @@
     {
       "name": "Forlorn Arena",
       "access_rules":[
-         "fa_access"
+         "$entrances_or_off|fa_access"
       ],
       "children": [
          {
@@ -4663,7 +4663,7 @@
     {
       "name": "Labyrinth of Ash",
       "access_rules":[
-         "la_access"
+         "$entrances_or_off|la_access"
       ],
       "children": [
          {
@@ -4842,7 +4842,7 @@
     {
       "name": "Chamber of Fate",
       "access_rules":[
-         "cof_access"
+         "$entrances_or_off|cof_access"
       ],
       "children": [
          {
@@ -4868,7 +4868,7 @@
     {
       "name": "Grave of the Sleeper",
       "access_rules":[
-         "gos_access"
+         "$entrances_or_off|gos_access"
       ],
       "children": [
          {

@@ -403,13 +403,10 @@ function CheckForItem(item_id)
             Tracker:FindObjectForCode("ranged_attacks").Active = true
         elseif item.name == "Icarian Flight" or item.name == "Coffin" then
             Tracker:FindObjectForCode("dsf_checks").Active = true
-            Tracker:FindObjectForCode("hdex_jumps").Active = true
-            Tracker:FindObjectForCode("summon_jumps").Active = true
         elseif item.name == "Rock Bridge" then
-            Tracker:FindObjectForCode("hdex_jumps").Active = true
-            Tracker:FindObjectForCode("summon_jumps").Active = true
+            Tracker:FindObjectForCode("dsf_checks").Active = true
         elseif item.name == "Summon Snail" or item.name == "Summon Koadama" then
-            Tracker:FindObjectForCode("summon_jumps").Active = true
+            Tracker:FindObjectForCode("dsf_checks").Active = true
         elseif item.name == "Blood Strike" or item.name == "Blood Drain" then
             ElementAction[ELEMENT.blood]()
         else

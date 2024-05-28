@@ -83,7 +83,7 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["drops_on", "shops_on", "secret_doors", "switch_locks"]
+                            ["drops_on", "shops_on", "secret_doors", "switch_locks", "entrance_toggle"]
                         ]
                     }
                 ]

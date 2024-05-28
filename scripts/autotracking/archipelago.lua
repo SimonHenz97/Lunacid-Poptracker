@@ -245,6 +245,7 @@ function AutoFill()
         shopsanity = {code="shops_on", mapping=nil},
         switch_locks = {code="switch_locks", mapping=nil},
         secret_door_lock = {code="secret_doors", mapping=nil},
+        entrance_randomization = {code="entrance_toggle", mapping=nil}
     }
 
     for settings_name , settings_value in pairs(SLOT_DATA) do
