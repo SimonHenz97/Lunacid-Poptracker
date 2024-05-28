@@ -32,11 +32,11 @@ function switches_or_off(key)
     local switch_toggle = Tracker:ProviderCountForCode('switch_locks')
     local key_needed = Tracker:ProviderCountForCode(key)
     if switch_toggle * key_needed == 1 then
-        return 1 --> You have both secret doors on and the Dusty Crystal Orb
+        return 1 --> You have both switches on and the Correct Key
     elseif switch_toggle == 1 and key_needed == 0 then
-        return 0 --> You have both secret doors on and don't have the Dusty Crystal Orb
+        return 0 --> You have both switches on and don't have the correct key
     else
-        return 1 --> Secret Doors must be off so return true
+        return 1 --> Switches must be off so return true
     end
 end
 
