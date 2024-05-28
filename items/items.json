@@ -317,6 +317,13 @@
         ]
     },
     {
+        "name": "Temple of Earth Switch Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "toe_switch_key"
+    },
+    {
         "name": "Dropsanity Enabled",
         "type": "toggle",
         "img": "images/items/setting_on.png",
@@ -343,5 +350,12 @@
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
         "codes": "switch_locks"
+    },
+    {
+        "name": "Entrance Randomizer Toggle",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "entrance_toggle"
     }
 ]

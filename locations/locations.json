@@ -5262,5 +5262,370 @@
                ]
             }
       ]
+    },
+    {
+      "name": "Interconnections",
+      "children": [
+         {
+            "name": "Broken Steps Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 620,
+                  "y": 539
+               }
+            ]
+         },
+         {
+            "name": "Lower Rickety Bridge Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1250,
+                  "y": 539
+               }
+            ]
+         },
+         {
+            "name": "Sewers Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 938,
+                  "y": 668
+               }
+            ]
+         },
+         {
+            "name": "Treetop Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 2190,
+                  "y": 420
+               }
+            ]
+         },
+         {
+            "name": "Tomb Secret Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 2190,
+                  "y": 670
+               }
+            ]
+         },
+         {
+            "name": "Accursed Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1820,
+                  "y": 1056
+               }
+            ]
+         },
+         {
+            "name": "Castle Doors Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 938,
+                  "y": 1200
+               }
+            ]
+         },
+         {
+            "name": "Library Exit Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 312,
+                  "y": 420
+               }
+            ]
+         },
+         {
+            "name": "Surface Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 623,
+                  "y": 280
+               }
+            ]
+         },
+         {
+            "name": "Light Accursed Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1282,
+                  "y": 1054
+               }
+            ]
+         },
+         {
+            "name": "Queen's Throne Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1250,
+                  "y": 1314
+               }
+            ]
+         },
+         {
+            "name": "Prison Main Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1565,
+                  "y": 1418
+               }
+            ]
+         },
+         {
+            "name": "Secondary Lock Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1564,
+                  "y": 1670
+               }
+            ]
+         },
+         {
+            "name": "Burning Hot Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 937,
+                  "y": 1439
+               }
+            ]
+         },
+         {
+            "name": "Forbidden Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1880,
+                  "y": 1570
+               }
+            ]
+         },
+         {
+            "name": "Sucsarian Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 1852,
+                  "y": 1824
+               }
+            ]
+         },
+         {
+            "name": "Dreamer Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 2190,
+                  "y": 1930
+               }
+            ]
+         },
+         {
+            "name": "Ballroom Side Rooms Keyring",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 642,
+                  "y": 1313
+               }
+            ]
+         },
+         {
+            "name": "Tower of Abyss Keyring",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 937,
+                  "y": 1675
+               }
+            ]
+         },
+         {
+            "name": "Sewers Sea Door Key",
+            "chest_unopened_img": "images/items/check_misc_fade.png",
+            "chest_opened_img": "images/items/check_misc.png",
+            "sections": [
+               { 
+                  "name": "Unlocks Map",
+                  "item_count": 1
+               }
+            ],
+            "map_locations": [
+               { 
+                  "map": "Interconnections",
+                  "x": 937,
+                  "y": 965
+               }
+            ]
+         }
+      ]
     }
 ]

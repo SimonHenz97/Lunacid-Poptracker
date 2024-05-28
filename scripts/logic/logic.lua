@@ -39,3 +39,16 @@ function switches_or_off(key)
         return 1 --> Secret Doors must be off so return true
     end
 end
+
+function entrances_or_off(key)
+    --> Checking if Switch Locks Are Enabled
+    local entrance_toggle = Tracker:ProviderCountForCode('entrance_toggle')
+    local key_needed = Tracker:ProviderCountForCode(key)
+    if entrance_toggle * key_needed == 1 then
+        return 1 --> You have entrance rando on and the correct key
+    elseif entrance_toggle == 1 and key_needed == 0 then
+        return 0 --> You have entrance rando and don't have the correct key
+    else
+        return 1 --> Entrance Rando must be off so return true
+    end
+end
