@@ -174,7 +174,7 @@ ITEM_MAPPING = {
     --[771111323] = {"Sealed Ballroom Switch Key", "toggle"},
     --[771111324] = {"Grotto Fire Switch Keyring", "toggle"},
     --[771111326] = {"Sand Temple Switches Keyring", "toggle"},
-    [771111328] = {{"term_key"}, "toggle"},
+    --[771111328] = {{"term_key"}, "toggle"},
     --[771111329] = {"Forlorn Arena Gate Switch Key", "toggle"},
     --[771111330] = {"Temple of Water Switch Key", "toggle"},
     --[771111331] = {"Temple of Earth Switch Key", "toggle"},
@@ -206,7 +206,7 @@ ITEM_MAPPING = {
     --[771111375] = {"Burning Hot Key", "toggle"},
     --[771111376] = {"Forbidden Door Key", "toggle"},
     --[771111377] = {"Sucsarian Key", "toggle"},
-    [771111378] = {"Dreamer Key", "toggle"},
+    --[771111378] = {"Dreamer Key", "toggle"},
     --[771111379] = {"Ballroom Side Rooms Keyring", "toggle"},
     --[771111380] = {"Tower of Abyss Keyring", "toggle"},
 }
