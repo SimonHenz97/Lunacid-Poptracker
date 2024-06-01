@@ -171,6 +171,12 @@
         "codes": "jo_skull"
     },
     {
+        "name": "Skeleton Egg",
+        "type": "toggle",
+        "img": "images/items/misc.png",
+        "codes": "skel_egg"
+    },
+    {
         "name": "Strange Coins",
         "type": "consumable",
         "min_quantity": 0,

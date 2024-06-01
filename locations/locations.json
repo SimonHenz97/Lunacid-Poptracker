@@ -246,16 +246,12 @@
                   "name": "Temple of Silence Switch",
                   "chest_unopened_img": "images/items/check_misc_fade.png",
                   "chest_opened_img": "images/items/check_misc.png",
-                  "visibility_rules": [
-                     "switch_locks"
-                  ],
                   "access_rules": [
                      "ekey_1, $switches_or_off|tos_switch_key"
                   ],
                   "sections": [
                      { 
                         "name": "ToS Access, Mire + Yosei On",
-                        "hosted_item": "tos_switch_key",
                         "item_count": 1
                      }
                   ],
@@ -1544,9 +1540,6 @@
                "name": "AT: Gated Tomb Near Corrupted Room",
                "chest_unopened_img": "images/items/check_item_fade.png",
                "chest_opened_img": "images/items/check_item.png",
-               "access_rules": [
-                     "$secrets_or_off"
-               ],
                "sections": [
                   { 
                      "name": "Ocean Elixir",
@@ -1896,9 +1889,6 @@
             },
             {
                "name": "Accursed Tomb Main Switch",
-               "visibility_rules": [
-                  "switch_locks"
-               ],
                "access_rules": [
                   "$switches_or_off|at_switch_keyring"
                ],
@@ -1920,9 +1910,6 @@
             },
             {
                "name": "Accursed Tomb Crypt Switch",
-               "visibility_rules": [
-                  "switch_locks"
-               ],
                "access_rules": [
                   "$switches_or_off|at_switch_keyring"
                ],
@@ -4051,6 +4038,9 @@
             "name": "TP: Egg's Resting Place",
             "chest_unopened_img": "images/items/check_misc_fade.png",
             "chest_opened_img": "images/items/check_misc.png",
+            "access_rules":[
+               "skel_egg"
+            ],
             "sections": [
                { 
                   "name": "Skeletal Rattle",

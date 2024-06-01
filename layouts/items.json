@@ -16,7 +16,7 @@
                         "rows": [
                             ["vamp_symbol", "bb", "ekey", "term_key", "ckey"],
                             ["scoins", "vhs_tape_1", "vhs_tape_2", "w_talis", "e_talis"],
-                            ["dc_orb", "jo_skull", "slayer"]
+                            ["dc_orb", "skel_egg", "jo_skull", "slayer"]
                         ]
                     }
                 ]

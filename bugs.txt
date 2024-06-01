@@ -1,8 +1,2 @@
-Bugged Locations:
-ToS Switch Location
-AT gated room near corrupted room
-AT crypt Switch Key
-
 Notes/TODO:
 sb door key is light accursed key
-TP Egg needs Skele Egg Req
