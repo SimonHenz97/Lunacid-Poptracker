@@ -241,7 +241,7 @@
         "type": "toggle",
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
-        "codes": "at_switch_keyring:"
+        "codes": "at_switch_keyring"
     },
     {
         "name": "Prometheus Fire Switch Keyring",
@@ -305,6 +305,146 @@
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
         "codes": "toe_switch_key"
+    },
+    {
+        "name": "Broken Steps Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "broken_steps_door"
+    },
+    {
+        "name": "Lower Rickety Bridge Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "lower_bridge_door"
+    },
+    {
+        "name": "Sewers Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "sewers_door"
+    },
+    {
+        "name": "Treetop Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "treetop_door"
+    },
+    {
+        "name": "Tomb Secret Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "tomb_secret_door"
+    },
+    {
+        "name": "Sewers Sea Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "sewers_sea_door"
+    },
+    {
+        "name": "Accursed Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "accursed_door"
+    },
+    {
+        "name": "Castle Doors Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "castle_doors"
+    },
+    {
+        "name": "Library Exit Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "library_exit_door"
+    },
+    {
+        "name": "Surface Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "surface_door"
+    },
+    {
+        "name": "Light Accursed Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "light_accursed_door"
+    },
+    {
+        "name": "Queen's Throne Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "queen_throne_door"
+    },
+    {
+        "name": "Prison Main Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "prison_main_door"
+    },
+    {
+        "name": "Secondary Lock Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "secondary_lock_door"
+    },
+    {
+        "name": "Burning Hot Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "burning_hot_door"
+    },
+    {
+        "name": "Forbidden Door Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "forbidden_door"
+    },
+    {
+        "name": "Sucsarian Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "sucsarian_door"
+    },
+    {
+        "name": "Dreamer Key",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "dreamer_door"
+    },
+    {
+        "name": "Ballroom Side Rooms Keyring",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "ballroom_side_door"
+    },
+    {
+        "name": "Tower of Abyss Keyring",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "tower_abyss_door"
     },
     {
         "name": "Forbidden Archives Access",

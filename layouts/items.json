@@ -129,10 +129,10 @@
                         "item_margin": "10, 10",
                         "h_alignment": "left",
                         "rows": [
-                            ["fba_access", "yf_access", "fm_access", "fc_access", "at_access"],
-                            ["clf_access", "lc_access", "gws_access", "ss_access", "tr_access"],
-                            ["tp_access", "fa_access", "bg_access", "la_access", "cof_access"],
-                            ["gos_access", "sb_access", "toa_access", "ahb_access"]
+                            ["broken_steps_door", "lower_bridge_door", "sewers_door", "treetop_door", "tomb_secret_door"],
+                            ["sewers_sea_door", "accursed_door", "castle_doors", "library_exit_door", "surface_door"],
+                            ["light_accursed_door", "queen_throne_door", "prison_main_door", "secondary_lock_door", "burning_hot_door"],
+                            ["forbidden_door", "sucsarian_door", "dreamer_door", "ballroom_side_door", "tower_abyss_door"]
                         ]
                     }
                 ]
