@@ -23,6 +23,54 @@
                      }
                   ]
                },
+               {
+                  "name": "Broken Steps Door",
+                  "chest_unopened_img": "images/items/check_misc_fade.png",
+                  "chest_opened_img": "images/items/check_misc.png",
+                  "visibility_rules": [
+                     "door_lock_toggle"
+                  ],
+                  "access_rules": [
+                     "$door_locks_or_off|broken_steps_door"
+                  ],
+                  "sections": [
+                     { 
+                        "name": "Unlocks a new map",
+                        "item_count": 1
+                     }
+                  ],
+                  "map_locations": [
+                     { 
+                        "map": "Hollow Basin",
+                        "x": 763,
+                        "y": 1174
+                     }
+                  ]
+               },
+               {
+                  "name": "Hollow Basin Roof",
+                  "chest_unopened_img": "images/items/check_misc_fade.png",
+                  "chest_opened_img": "images/items/check_misc.png",
+                  "visibility_rules": [
+                     "door_lock_toggle"
+                  ],
+                  "access_rules": [
+                     "$door_locks_or_off|dsf_checks"
+                  ],
+                  "sections": [
+                     { 
+                        "name": "Unlocks a new map",
+                        "item_count": 1
+                     }
+                  ],
+                  "map_locations": [
+                     { 
+                        "map": "Hollow Basin",
+                        "x": 996,
+                        "y": 760
+                     }
+                  ]
+               },
               {
                   "name": "HB: Near Enchanted Door",
                   "chest_unopened_img": "images/items/check_item_fade.png",

@@ -58,7 +58,7 @@
                         },
                         {
                             "type": "group",
-                            "header": "Map Access",
+                            "header": "Door Keys",
                             "dock": "top",
                             "content": {
                                 "type": "layout",
@@ -349,7 +349,7 @@
                         },
                         {
                             "type": "group",
-                            "header": "Map Access",
+                            "header": "Door Keys",
                             "dock": "top",
                             "margin": "0,0,3,0",
                             "content": {

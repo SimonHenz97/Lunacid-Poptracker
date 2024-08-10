@@ -633,10 +633,10 @@
         "codes": "switch_locks"
     },
     {
-        "name": "Entrance Randomizer Toggle",
+        "name": "Door Locks Toggle",
         "type": "toggle",
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
-        "codes": "entrance_toggle"
+        "codes": "door_lock_toggle"
     }
 ]
