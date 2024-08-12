@@ -243,8 +243,9 @@ function AutoFill()
     local slotCodes = {
         dropsanity = {code="drops_on", mapping=nil},
         shopsanity = {code="shops_on", mapping=nil},
-        switch_locks = {code="slocks", mapping=nil},
-        secret_door_lock = {code="sdoors", mapping=nil},
+        switch_locks = {code="switch_locks", mapping=nil},
+        secret_door_lock = {code="secret_doors", mapping=nil},
+        entrance_randomization = {code="entrance_toggle", mapping=nil}
     }
 
     for settings_name , settings_value in pairs(SLOT_DATA) do

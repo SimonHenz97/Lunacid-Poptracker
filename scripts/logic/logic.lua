@@ -13,3 +13,60 @@ function has_more_then_n_consumable(n)
     end
     return 0 -- 0 => no access
 end
+
+function secrets_or_off()
+    --> Checking Secret Door Logic
+    local secret_toggle = Tracker:ProviderCountForCode('secret_doors')
+    local doc_obtained = Tracker:ProviderCountForCode('dc_orb')
+    if secret_toggle * doc_obtained == 1 then
+        return 1 --> You have both secret doors on and the Dusty Crystal Orb
+    elseif secret_toggle == 1 and doc_obtained == 0 then
+        return 0 --> You have both secret doors on and don't have the Dusty Crystal Orb
+    else
+        return 1 --> Secret Doors must be off so return true
+    end
+end
+
+function switches_or_off(key)
+    --> Checking if Switch Locks Are Enabled
+    local switch_toggle = Tracker:ProviderCountForCode('switch_locks')
+    local key_needed = Tracker:ProviderCountForCode(key)
+    if switch_toggle * key_needed == 1 then
+        return 1 --> You have both switches on and the Correct Key
+    elseif switch_toggle == 1 and key_needed == 0 then
+        return 0 --> You have both switches on and don't have the correct key
+    else
+        return 1 --> Switches must be off so return true
+    end
+end
+
+function entrances_or_off(access)
+    --> Checking if Switch Locks Are Enabled
+    local switch_toggle = Tracker:ProviderCountForCode('entrance_toggle')
+    local access_needed = Tracker:ProviderCountForCode(access)
+    if switch_toggle * access_needed == 1 then
+        return 1 --> You have both switches on and the Correct Key
+    elseif switch_toggle == 1 and access_needed == 0 then
+        return 0 --> You have both switches on and don't have the correct key
+    else
+        return 1 --> Switches must be off so return true
+    end
+end
+
+function door_locks_or_off(key)
+    --> Checking if Entrance Rando is Enabled
+    local entrance_toggle = Tracker:ProviderCountForCode('door_lock_toggle')
+    local key_needed
+    if key == true then
+        key_needed = 1
+    else 
+        key_needed = Tracker:ProviderCountForCode(key)
+    end
+    if entrance_toggle * key_needed == 1 then
+        return 1 --> You have entrance rando on and have access
+    elseif entrance_toggle == 1 and key_needed == 0 then
+        return 0 --> You have entrance rando and don't have access
+    else
+        return 1 --> Entrance Rando must be off so return true
+    end
+end

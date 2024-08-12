@@ -6,7 +6,7 @@ ITEM_MAPPING = {
     --[771111112] = {"Mana Vial", "consumable"},
     --[771111113] = {"Antidote", "consumable"},
     --[771111114] = {"Blood Wine", "consumable"},
-    --[771111115] = {"Crystal Shard", "consumable"},
+    [771111115] = {"Crystal Shard", "consumable"},
     --[771111116] = {"Ocean Elixir", "consumable"},
     --[771111117] = {"Earth Elixir", "consumable"},
     --[771111118] = {"Poison Throwing Knife", "consumable"},
@@ -174,7 +174,7 @@ ITEM_MAPPING = {
     --[771111323] = {"Sealed Ballroom Switch Key", "toggle"},
     --[771111324] = {"Grotto Fire Switch Keyring", "toggle"},
     --[771111326] = {"Sand Temple Switches Keyring", "toggle"},
-    [771111328] = {{"term_key"}, "toggle"},
+    --[771111328] = {{"term_key"}, "toggle"},
     --[771111329] = {"Forlorn Arena Gate Switch Key", "toggle"},
     --[771111330] = {"Temple of Water Switch Key", "toggle"},
     --[771111331] = {"Temple of Earth Switch Key", "toggle"},
@@ -403,13 +403,10 @@ function CheckForItem(item_id)
             Tracker:FindObjectForCode("ranged_attacks").Active = true
         elseif item.name == "Icarian Flight" or item.name == "Coffin" then
             Tracker:FindObjectForCode("dsf_checks").Active = true
-            Tracker:FindObjectForCode("hdex_jumps").Active = true
-            Tracker:FindObjectForCode("summon_jumps").Active = true
         elseif item.name == "Rock Bridge" then
-            Tracker:FindObjectForCode("hdex_jumps").Active = true
-            Tracker:FindObjectForCode("summon_jumps").Active = true
+            Tracker:FindObjectForCode("dsf_checks").Active = true
         elseif item.name == "Summon Snail" or item.name == "Summon Koadama" then
-            Tracker:FindObjectForCode("summon_jumps").Active = true
+            Tracker:FindObjectForCode("dsf_checks").Active = true
         elseif item.name == "Blood Strike" or item.name == "Blood Drain" then
             ElementAction[ELEMENT.blood]()
         else
