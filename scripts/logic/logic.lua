@@ -40,14 +40,27 @@ function switches_or_off(key)
     end
 end
 
-function door_locks_or_off(access)
+function entrances_or_off(access)
+    --> Checking if Switch Locks Are Enabled
+    local switch_toggle = Tracker:ProviderCountForCode('entrance_toggle')
+    local access_needed = Tracker:ProviderCountForCode(access)
+    if switch_toggle * access_needed == 1 then
+        return 1 --> You have both switches on and the Correct Key
+    elseif switch_toggle == 1 and access_needed == 0 then
+        return 0 --> You have both switches on and don't have the correct key
+    else
+        return 1 --> Switches must be off so return true
+    end
+end
+
+function door_locks_or_off(key)
     --> Checking if Entrance Rando is Enabled
     local entrance_toggle = Tracker:ProviderCountForCode('door_lock_toggle')
     local key_needed
-    if access == true then
+    if key == true then
         key_needed = 1
     else 
-        key_needed = Tracker:ProviderCountForCode(access)
+        key_needed = Tracker:ProviderCountForCode(key)
     end
     if entrance_toggle * key_needed == 1 then
         return 1 --> You have entrance rando on and have access

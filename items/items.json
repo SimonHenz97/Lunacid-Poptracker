@@ -638,5 +638,12 @@
         "img": "images/items/setting_on.png",
         "disabled_img": "images/items/setting_off.png",
         "codes": "door_lock_toggle"
+    },
+    {
+        "name": "Entrance Randomization",
+        "type": "toggle",
+        "img": "images/items/setting_on.png",
+        "disabled_img": "images/items/setting_off.png",
+        "codes": "entrance_toggle"
     }
 ]

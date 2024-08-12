@@ -48,9 +48,12 @@ To enable auto tracking click on the AP icon in the upper left area, enter the A
 - [ ] Variants + Logic
     - [x] Shopsanity
     - [x] Dropsanity
+    - [ ] Quenchsanity
+    - [ ] Alchemysanity (Etna's Pupil)
     - [x] Element Rando
     - [x] Switch Locks
     - [X] Secret Door Lock
+    - [ ] Door Locks
     - [ ] Entrance Rando
 - [ ] AP Auto Tracking completed
 
@@ -58,11 +61,13 @@ The above list is will be subject to change as randomizer features are added/rem
 
 ## AP Support Checklist
 - [x] AP Auto Tracking
-- [x] Item Tracking
-- [x] Element Tracking
+- [ ] Item Tracking
+- [ ] Element Tracking
 - [ ] All Locations
 - [ ] Switch Locks
 - [ ] Secret Door Lock
+- [ ] Door Lock
+- [ ] Auto Map Switching (Tenative)
 
 
 ## Closing Thanks & Links
