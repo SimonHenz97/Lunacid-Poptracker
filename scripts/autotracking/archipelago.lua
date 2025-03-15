@@ -40,9 +40,13 @@ function dump_table(o, depth)
 end
 
 function onClear(slot_data)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
-    end
+    -- if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+    --     print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
+    -- end
+
+    Archipelago:SetNotify({string.format("Slot:%d:currentScene", Archipelago.PlayerNumber), string.format("Slot:%d:sceneLinks", Archipelago.PlayerNumber)});
+    Archipelago:Get({string.format("Slot:%d:currentScene", Archipelago.PlayerNumber), string.format("Slot:%d:sceneLinks", Archipelago.PlayerNumber)});
+
     SLOT_DATA = slot_data
     CUR_INDEX = -1
     -- reset locations
@@ -64,7 +68,7 @@ function onClear(slot_data)
                 end
             end
         end
-        
+
     end
     -- reset items
     for _, items_array in pairs(ITEM_MAPPING) do
@@ -229,6 +233,23 @@ end
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 -- Archipelago:AddBouncedHandler("bounce handler", onBounce)
 
+Archipelago:AddSetReplyHandler("DataStorageHandler", function (key, value, oldValue)
+    if key == string.format("Slot:%d:currentScene", Archipelago.PlayerNumber) then
+        print("key: ", key)
+        print("value: ", value)
+        print("oldValue: ", oldValue)
+        CURRENT_SCENE = value
+        Tracker:UiHint("ActivateTab", value)
+    end
+
+    if key == string.format("Slot:%d:sceneLinks", Archipelago.PlayerNumber) then
+        print("key: ", key)
+        print("value: ", dump_table(value))
+        print("oldValue: ", dump_table(oldValue))
+        SCENE_LINKS = value
+    end
+end)
+
 function AutoFill()
     if SLOT_DATA == nil  then
         print("its fucked")
@@ -245,7 +266,11 @@ function AutoFill()
         shopsanity = {code="shops_on", mapping=nil},
         switch_locks = {code="switch_locks", mapping=nil},
         secret_door_lock = {code="secret_doors", mapping=nil},
-        entrance_randomization = {code="entrance_toggle", mapping=nil}
+        door_locks = {code="door_lock_toggle", mapping=nil},
+        entrance_randomization = {code="entrance_toggle", mapping=nil},
+        etnas_pupil = {code="etna_on", mapping=nil},
+        quenchsanity = {code="quench_on", mapping=nil},
+        -- enemy_randomization = {code="enemy_toggle", mapping=nil},
     }
 
     for settings_name , settings_value in pairs(SLOT_DATA) do

@@ -1,0 +1,941 @@
+[
+    {
+        "name": "Doorsanity",
+        "visibility_rules": [
+            "show_doors"
+        ],
+        "children": [
+            {
+                "name": "Hollow Basin",
+                "children": [
+                    {
+                        "name": "Door to the Forbidden Archives",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "$door_locks_or_off|broken_steps_door"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Jump across the Broken Steps",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Hollow Basin",
+                                "x": 763,
+                                "y": 1174
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hollow Basin Roof",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "dsf_checks"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Jump Through the Roof",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Hollow Basin",
+                                "x": 996,
+                                "y": 760
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Door to Yosei Forest",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "$switches_or_off|templeofsilenceswitchkey, $door_locks_or_off|lower_bridge_door, enchantedkey"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Cross the Rickety Bridge",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Hollow Basin",
+                                "x": 820,
+                                "y": 966
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Door to the Sewers",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "$switches_or_off|templeofsilenceswitchkey, $door_locks_or_off|sewers_door, enchantedkey"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Down The Drain",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Hollow Basin",
+                                "x": 175,
+                                "y": 2380
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Forbidden Archives",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Hollow Basin",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "$door_locks_or_off|broken_steps_door"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Remember to check books in before they're late",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Forbidden Archives",
+                                "x": 129,
+                                "y": 261
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Door to Laetus Chasm",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                            "$door_locks_or_off|library_exit_door"
+                        ],
+                        "sections": [
+                            {
+                                "name": "Remember to check books in before they're late",
+                                "item_count": 1
+                            }
+                        ],
+                        "map_locations": [
+                            {
+                                "map": "Forbidden Archives",
+                                "x": 1653,
+                                "y": 1060
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+               "name": "The Fetid Mire",
+               "access_rules": [
+                   "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to Hollow Basin",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|sewers_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Climb the Drain",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "The Fetid Mire",
+                           "x": 1734,
+                           "y": 2389
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to the Sanguine Sea",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|sewers_sea_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Further down the Drain",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "The Fetid Mire",
+                           "x": 538,
+                           "y": 114
+                        }
+                     ]
+                  }
+               ]
+           },
+            {
+                "name": "The Sanguine Sea",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Accursed Tomb",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|accursed_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Enter the Accursed Tomb",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "The Sanguine Sea",
+                              "x": 1140,
+                              "y": 637
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to Fetid Mire",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|sewers_sea_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Enter the Fetid Mire",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "The Sanguine Sea",
+                              "x": 164,
+                              "y": 637
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to Castle Le Fanu",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|castle_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Enter the Castle",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "The Sanguine Sea",
+                              "x": 744,
+                              "y": 1271
+                           }
+                        ]
+                     }
+                ]
+            },
+            {
+                "name": "Accursed Tomb",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Yosei Forest",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|tomb_secret_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Climb out of the tomb",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Accursed Tomb",
+                              "x": 817,
+                              "y": 1317
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to the Sanguine Sea",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|accursed_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Brave the Accursed Tomb",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Accursed Tomb",
+                              "x": 622,
+                              "y": 1779
+                           }
+                        ]
+                     }
+                ]
+            },
+            {
+                "name": "Yosei Forest",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Hollow Basin",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|lower_bridge_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Cabin Door",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Yosei Forest",
+                              "x": 126,
+                              "y": 738
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to Accursed Tomb",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|tomb_secret_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Deep within the forest cave",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Yosei Forest",
+                              "x": 222,
+                              "y": 336
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to Forest Canopy",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|treetop_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Climb the trees",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Yosei Forest",
+                              "x": 1600,
+                              "y": 890
+                           }
+                        ]
+                     }
+                ]
+            },
+            {
+                "name": "Forest Canopy",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Yosei Forest",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|treetop_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Climb back down",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Forest Canopy",
+                              "x": 80,
+                              "y": 315
+                           }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Castle Le Fanu",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to the Sanguine Sea",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|castle_doors"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Exit the gates",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Castle Le Fanu",
+                              "x": 1215,
+                              "y": 1898
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to the Sealed Ballroom",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|ballroom_side_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Go to a party",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Castle Le Fanu",
+                              "x": 1695,
+                              "y": 510
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to the Throne Chamber",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|queen_throne_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Greet the ruler",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Castle Le Fanu",
+                              "x": 1486,
+                              "y": 833
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Door to the Boiling Grotto",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|burning_hot_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Hidden in the prison",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Castle Le Fanu",
+                              "x": 790,
+                              "y": 116
+                           }
+                        ]
+                     },
+                     {
+                        "name": "Hole to the Holy Battlefield",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|true"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Jump off the bridge",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Castle Le Fanu",
+                              "x": 1138,
+                              "y": 1793
+                           }
+                        ]
+                     }
+                ]
+            },
+            {
+                "name": "Sealed Ballroom",
+                "access_rules": [
+                    "$entrances_or_off|fba_access"
+                ],
+                "children": [
+                    {
+                        "name": "Door to Castle Le Fanu",
+                        "chest_unopened_img": "images/items/check_misc_fade.png",
+                        "chest_opened_img": "images/items/check_misc.png",
+                        "access_rules": [
+                           "$door_locks_or_off|ballroom_side_door"
+                        ],
+                        "sections": [
+                           { 
+                              "name": "Time to leave the party",
+                              "item_count": 1
+                           }
+                        ],
+                        "map_locations": [
+                           { 
+                              "map": "Sealed Ballroom",
+                              "x": 537,
+                              "y": 789
+                           }
+                        ]
+                     }
+                ]
+            },
+            {
+               "name": "Leatus Chasm",
+               "access_rules": [
+                   "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to the Surface",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|surface_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Climb the cliff-side path",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Laetus Chasm",
+                           "x": 1935,
+                           "y": 666
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to the Forbidden Archives",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|library_exit_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Climb the cliff-side path",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Laetus Chasm",
+                           "x": 1349,
+                           "y": 1759
+                        }
+                     ]
+                  }
+               ]
+           },
+           {
+               "name": "Great Well Surface",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Great Well Surface Holes",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|true"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Jump through the Holes",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Great Well Surface",
+                           "x": 1117,
+                           "y": 1063
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door To Laetus Chasm",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|surface_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Travel To Laetus Chasm",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Great Well Surface",
+                           "x": 809,
+                           "y": 2078
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "A Holy Battlefield",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Rope to Castle Le Fanu",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|true"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Clear the mirage, Scale the rope",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "A Holy Battlefield",
+                           "x": 655,
+                           "y": 136
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "Boiling Grotto",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to Castle Le Fanu",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|burning_hot_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Enter the Castle Le Fanu Cells",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Boiling Grotto",
+                           "x": 250,
+                           "y": 878
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Tower of Abyss Coffin",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|tower_abyss_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Def not a Souls Reference",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Boiling Grotto",
+                           "x": 355,
+                           "y": 403
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "Terminus Prison",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to the Throne Chamber",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|prison_main_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Ask for pardon",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Terminus Prison",
+                           "x": 1235,
+                           "y": 234
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to Labyrinth of Ash",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|forbidden_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Enter the forbidden door",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Terminus Prison",
+                           "x": 1671,
+                           "y": 911
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to the Forlorn Arena",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|secondary_lock_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Enter the Forlorn Arena",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Terminus Prison",
+                           "x": 1465,
+                           "y": 1333
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "Forlorn Arena",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to Terminus Prison",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|secondary_lock_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Self-Incarceration",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Forlorn Arena",
+                           "x": 236,
+                           "y": 1126
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to the Chamber of Fate",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|sucsarian_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Hoist the Talismans",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Forlorn Arena",
+                           "x": 1065,
+                           "y": 1126
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "Labyrinth of Ash",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to Terminus Prison",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|forbidden_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Self-Incarceration",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Labyrinth of Ash",
+                           "x": 1102,
+                           "y": 1330
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "name": "Chamber of Fate",
+               "access_rules": [
+                  "$entrances_or_off|fba_access"
+               ],
+               "children": [
+                  {
+                     "name": "Door to the Forlorn Arena",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|sucsarian_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "Enter the Fighting Pits",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Chamber of Fate",
+                           "x": 475,
+                           "y": 1382
+                        }
+                     ]
+                  },
+                  {
+                     "name": "Door to the Grave of the Dreamer",
+                     "chest_unopened_img": "images/items/check_misc_fade.png",
+                     "chest_opened_img": "images/items/check_misc.png",
+                     "access_rules": [
+                        "$door_locks_or_off|dreamer_door"
+                     ],
+                     "sections": [
+                        { 
+                           "name": "End the world",
+                           "item_count": 1
+                        }
+                     ],
+                     "map_locations": [
+                        { 
+                           "map": "Chamber of Fate",
+                           "x": 475,
+                           "y": 162
+                        }
+                     ]
+                  }
+               ]
+            }
+        ]
+    }
+]
